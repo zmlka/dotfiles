@@ -2,9 +2,8 @@
 " www.github.com/zmlka
 " my .vimrc to be used with MacVim
 " 
-" sourced from  github, some of the credits go to:
-" bleything, jferris, Robert Melton (www.vi-improved.org/vimrc.php) 
-" and of course the vim documentation: http://vimdoc.sourceforge.net
+" sourced from  github and my needs.
+" vim documentation: http://vimdoc.sourceforge.net
 "
 
 "
@@ -127,7 +126,4 @@ endif
 "
 ""      language specific   ""
 """"""""""""""""""""""""""""""
-
-"
-""      processing          ""
-au filetype processing map <D-r> <esc> :w <CR> :! open % <CR>
+" moved to ftplugin
