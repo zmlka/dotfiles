@@ -18,9 +18,9 @@ set nocompatible
 ""		basic behaviour ""
 """"""""""""""""""""""""""
 
-filetype on         "
-filetype indent on  " turn on filetype specific features
-filetype plugin on  "
+filetype on         " turn on filetype specific features
+filetype indent on  " remembe rthat these have the power to overwrite many of
+filetype plugin on  " the below options (<tab>ing, indenting etc) 
 set history=70      " remember the last 70 commands and search patterns
 set autoread        " if file is changed externally, auto update
 
@@ -44,21 +44,15 @@ set smartindent     " smart autoindenting when starting a new line. Use
 set shiftwidth=4    " number of spaces to use for each (auto) indent
 
 "
-""      line wraps      ""i
-" http://blog.ezyang.com/2010/03/vim-textwidth/
-set textwidth=78        " maximum columns is 78
-set formatoptions+=cq  " auto-wrap as below:
-"                  c: auto-wrap comments using textwidth
-"                   q: allow formatting of comments using gq
-"                    t: allow formatting of text using textwidth
-
-set wrapmargin=0       " overrulled by textwidth, not active
-
-
-"
 ""      search          ""
 set ignorecase      " ignore case in search
 set incsearch       " incremental search
+
+"
+""      opening         ""
+
+" when reopening, jumps to last known position
+:au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 
 "
 ""      gui and looks   ""
@@ -101,29 +95,5 @@ set statusline+=%c\]    " column number
 if &t_Co > 2 || has("gui_running")
     syntax on       " syntax highlighting
     set hlsearch    " highlight search results
-    set background=dark     " dark background
-    " highlight if lines are over 80 chars
-    augroup vimrc_autocmds
-        autocmd BufRead * highlight OverLength ctermbg=darkgrey guibg=#592929
-        autocmd BufRead * match OverLength /\%80v.*/
-    augroup END
-
 endif
 
-"
-""      GUI mode only   ""
-
-if has("gui_running")
-    set guioptions=c
-"                  c: don;t pop up windows, use the console instead
-"                   e: use tab bar instead of text tab bar!
-    set fuopt+=maxhorz  " grow to max horizontal size in fulscreen
-    set columns=90      " default width
-    set lines=135       " default height
-endif
-
-
-"
-""      language specific   ""
-""""""""""""""""""""""""""""""
-" moved to ftplugin
