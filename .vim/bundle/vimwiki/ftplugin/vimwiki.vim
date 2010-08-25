@@ -8,6 +8,14 @@ if exists("b:did_ftplugin")
 endif
 let b:did_ftplugin = 1  " Don't load another plugin for this buffer
 
+"
+""      my additions    "
+"""""""""""""""""""""""""
+
+setlocal spell
+setlocal spelllang=en_gb
+setlocal tw=79
+
 " UNDO list {{{
 " Reset the following options to undo this plugin.
 let b:undo_ftplugin = "setlocal ".
