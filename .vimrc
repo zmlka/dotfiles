@@ -46,7 +46,7 @@ set shiftwidth=4    " number of spaces to use for each (auto) indent
 "
 ""      navigation      ""
 set backspace=indent,eol,start	" backspace goes over everything
-set scrolloff=12    " minimal number of lines to keep above bottom
+set scrolloff=20    " minimal number of lines to keep above bottom
 set sidescrolloff=0 " minimal rows to keep on sides
 set scrolljump=5    " jump by 5 lines when running out of screen space
 noremap J 10j       " remap J to scroll down by more lines
@@ -92,7 +92,7 @@ set statusline+=\(%P\)\ " window showing percentage through file
 set statusline+=\[%l\,\ " line number
 set statusline+=%c\]    " column number
 
-
+set visualbell          " disbale audiable feedback
 "
 ""      Colors only     ""
 
