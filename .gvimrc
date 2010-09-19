@@ -14,3 +14,4 @@ set lines=135       " default height
     
 set background=dark
 
+set guifont=Panic\ Sans:h12
