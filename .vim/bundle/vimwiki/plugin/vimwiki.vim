@@ -249,7 +249,7 @@ call s:default('valid_html_tags', 'b,i,s,u,sub,sup,kbd,br,hr')
 
 call s:default('html_header_numbering', 0)
 call s:default('html_header_numbering_sym', '')
-call s:default('conceallevel', 3)
+call s:default('conceallevel', 0)
 
 call s:default('current_idx', 0)
 

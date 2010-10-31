@@ -11,7 +11,9 @@ set guioptions=c
 set fuopt+=maxhorz  " grow to max horizontal size in fulscreen
 set columns=90      " default width
 set lines=135       " default height
-    
+
+
+
 set background=dark
 
-set guifont=Panic\ Sans:h12
+set guifont=Droid\ Sans\ Mono\ Slashed:h12
