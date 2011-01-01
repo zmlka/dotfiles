@@ -13,7 +13,10 @@ set columns=90      " default width
 set lines=135       " default height
 
 
-
+" moria colorscheme, further instructions:
+" http://www.vim.org/scripts/script.php?script_id=1464
 set background=dark
+colorscheme moria
+
 
 set guifont=Droid\ Sans\ Mono\ Slashed:h12
