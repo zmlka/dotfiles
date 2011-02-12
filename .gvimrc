@@ -19,4 +19,4 @@ set background=dark
 colorscheme moria
 
 
-set guifont=Droid\ Sans\ Mono\ Slashed:h12
+set guifont=Bitstream\ Vera\ Sans\ Mono:h12

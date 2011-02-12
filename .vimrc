@@ -68,7 +68,7 @@ set autochdir       " automatially switch to working direcory
 
 """"""""""""""""""""""""""
 "
-""      look            ""
+""      look & feel     ""
 """"""""""""""""""""""""""
 
 set showmatch       " hightlight matching braces
@@ -98,6 +98,7 @@ set statusline+=\[%l\,\ " line number
 set statusline+=%c\]    " column number
 
 set visualbell          " disbale audiable feedback
+
 "
 ""      Colors only     ""
 
@@ -109,7 +110,54 @@ endif
 
 """"""""""""""""""""""""""
 "
-"" vimwiki options  "   ""
+"" filetype specific    ""
 """"""""""""""""""""""""""
+
+"
+""      vimwiki         ""
 let g:vimwiki_list = [{'path': '~/Documents/vimwiki/', 'path_html': '~/Documents/vimwiki_html/' }]
+let g:vimwiki_camel_case = 0
+
+
+
+
+""""""""""""""""""""""""""
+"
+"" key remapings        ""
+""""""""""""""""""""""""""
+
+""      split navigation
+map <C-k> <C-w><Up>
+map <C-j> <C-w><Down>
+map <C-l> <C-w><Right>
+map <C-h> <C-w><Left>
+
+""      tab navigation
+map <C-Tab> :tabnext<cr>
+map <C-S-Tab> :tabprevious<cr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
