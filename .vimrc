@@ -106,3 +106,10 @@ if &t_Co > 2 || has("gui_running")
     set hlsearch    " highlight search results
 endif
 
+
+""""""""""""""""""""""""""
+"
+"" vimwiki options  "   ""
+""""""""""""""""""""""""""
+let g:vimwiki_list = [{'path': '~/Documents/vimwiki/', 'path_html': '~/Documents/vimwiki_html/' }]
+
