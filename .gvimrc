@@ -18,5 +18,5 @@ set lines=135       " default height
 set background=dark
 colorscheme moria
 
-
 set guifont=Bitstream\ Vera\ Sans\ Mono:h12
+set linespace=1

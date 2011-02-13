@@ -115,10 +115,11 @@ endif
 
 "
 ""      vimwiki         ""
-let g:vimwiki_list = [{'path': '~/Documents/vimwiki/', 'path_html': '~/Documents/vimwiki_html/' }]
+
+" save diary entries in the same directory as normal entries
+" allows for linking to wiki entries from diary
+let g:vimwiki_list = [{'path': '~/Documents/vimwiki/', 'path_html': '~/Documents/vimwiki_html/', 'diary_rel_path' : ''}]
 let g:vimwiki_camel_case = 0
-
-
 
 
 """"""""""""""""""""""""""
@@ -129,14 +130,21 @@ let g:vimwiki_camel_case = 0
 ""      split navigation
 map <C-k> <C-w><Up>
 map <C-j> <C-w><Down>
-map <C-l> <C-w><Right>
-map <C-h> <C-w><Left>
+map <C-h> <C-w><Right>
+map <C-l> <C-w><Left>
 
-""      tab navigation
+
+""      tab navigation  "
 map <C-Tab> :tabnext<cr>
 map <C-S-Tab> :tabprevious<cr>
+imap <C-Tab> <Esc>:tabnext<cr>i 
+imap <C-S-Tab> <Esc>:tabprevious<cr>i
 
-
+""      insert time     "
+" http://vim.wikia.com/wiki/VimTip97
+" man 3 strftime for an expanation of the notation
+nmap <F2> a<C-R>=strftime("%a %d.%m.%Y %H:%M %Z")<CR><Esc>
+imap <F2> <C-R>=strftime("%a %d.%m.%Y %H:%M %Z")<CR>
 
 
 
