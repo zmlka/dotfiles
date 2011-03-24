@@ -44,7 +44,9 @@ export LSCOLORS=bxgxdghxfxexaDEcGdcAcE
 #	x  default foreground or background
 
 ## editor
-export EDITOR='mvim -f' # return focus to term 
+# https://github.com/b4winckler/macvim/wiki/FAQ
+export EDITOR='mvim -f --nomru -c "au VimLeave * !open -a Terminal"'
+
 
 ## aliases
 alias ..='cd ..'

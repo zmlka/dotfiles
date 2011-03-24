@@ -14,7 +14,6 @@ set lines=135       " default height
 
 " 
 " https://wincent.com/wiki/MacVim_fullscreen_mode
-macmenu &Edit.Find.Find\.\.\. key=<nop> " free up Command-F
 set fuopt+=maxhorz  " grow to max horizontal size in fulscreen
 
 

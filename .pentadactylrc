@@ -1,0 +1,36 @@
+"
+" www.github.com/zmlka
+" my .pentadactylrc to be used on OS X
+" 
+" sourced from  github and my needs.
+" documentation: http://dactyl.sourceforge.net/help/pentadactyl/
+"
+
+
+" hide scrollbars
+set guioptions-=b
+set guioptions-=r
+
+" maximum number of lines to display in a listing
+set maxitems=15
+
+" don't show search suggestions or local files
+set complete-=s
+set complete-=l
+
+""""""""""""""""""""""""""
+"
+""      Pass Keys       ""
+""""""""""""""""""""""""""
+
+set passkeys+=google.com/reader:jkvnpbumoaAXNOVPJK?gehtl<Return>
+
+
+""""""""""""""""""""""""""
+"
+""      Key Remapping   ""
+""""""""""""""""""""""""""
+
+" capital J and K jump by 10 lines
+nmap J 10j
+nmap K 10k
