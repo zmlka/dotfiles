@@ -5,7 +5,13 @@
 " sourced from  github and my needs.
 " documentation: http://dactyl.sourceforge.net/help/pentadactyl/
 "
+"
 
+""""""""""""""""""""""""""
+"
+""      UI              ""
+""""""""""""""""""""""""""
+set visualbell
 
 " hide scrollbars
 set guioptions-=b
@@ -22,9 +28,9 @@ set complete-=l
 "
 ""      Pass Keys       ""
 """"""""""""""""""""""""""
-
-set passkeys+=google.com/reader:jkvnpbumoaAXNOVPJK?gehtl<Return>
-
+" Google Experimental Search
+" http://www.google.com/experimental/
+set passkeys+='google\.com':jko<Return><S-Return><Esc>/
 
 """"""""""""""""""""""""""
 "
