@@ -30,7 +30,7 @@ set complete-=l
 """"""""""""""""""""""""""
 " Google Experimental Search
 " http://www.google.com/experimental/
-set passkeys+='google\.com':jko<Return><S-Return><Esc>/
+set passkeys+='google\.com':jk<Return><S-Return><Esc>/
 
 """"""""""""""""""""""""""
 "
