@@ -51,8 +51,7 @@ set backspace=indent,eol,start	" backspace goes over everything
 set scrolloff=40    " minimal number of lines to keep above bottom
 set sidescrolloff=0 " minimal rows to keep on sides
 set scrolljump=5    " jump by 5 lines when running out of screen space
-noremap J 10j       " remap J to scroll down by more lines
-noremap K 10k       " remap K to scroll up by more lines
+set whichwrap+=h,l  " allows h and l to go over EOL
 
 "
 ""      search          ""
@@ -64,7 +63,6 @@ set incsearch       " incremental search
 
 " when reopening, jumps to last known position
 :au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
-set autochdir       " automatially switch to working direcory
 
 """"""""""""""""""""""""""
 "
@@ -127,18 +125,23 @@ let g:vimwiki_camel_case = 0 " disable CamelCase in vimwiki
 "" key remapings        ""
 """"""""""""""""""""""""""
 
+""      scrolling
+noremap J 10j       " remap J to scroll up by more lines
+noremap K 10k       " remap K to scroll up by more lines
+
+
 ""      split navigation
 map <C-k> <C-w><Up>
 map <C-j> <C-w><Down>
-map <C-h> <C-w><Right>
-map <C-l> <C-w><Left>
+map <C-l> <C-w><Right>
+map <C-h> <C-w><Left>
 
 
 ""      tab navigation  "
-map <C-Tab> :tabnext<cr>
-map <C-S-Tab> :tabprevious<cr>
-imap <C-Tab> <Esc>:tabnext<cr>i 
-imap <C-S-Tab> <Esc>:tabprevious<cr>i
+map <C-n> :tabnext<cr>
+map <C-p> :tabprevious<cr>
+imap <C-n> <Esc>:tabnext<cr>i 
+imap <C-p> <Esc>:tabprevious<cr>i
 
 ""      insert time     "
 " http://vim.wikia.com/wiki/VimTip97

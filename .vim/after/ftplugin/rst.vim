@@ -1,7 +1,6 @@
 "
 " www.github.com/zmlka
-" additional settings to be used for markdown
-" https://github.com/hallison/vim-markdown
+" additional settings to be used for restructured text
 "
 
 "

@@ -43,10 +43,7 @@ export LSCOLORS=bxgxdghxfxexaDEcGdcAcE
 #	H  bold light grey; looks like bright white
 #	x  default foreground or background
 
-## editor
-# https://github.com/b4winckler/macvim/wiki/FAQ
-export EDITOR='mvim -f --nomru -c "au VimLeave * !open -a Terminal"'
-
+export EDITOR='mvim -f'
 
 ## aliases
 alias ..='cd ..'
