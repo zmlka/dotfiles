@@ -4,9 +4,7 @@
 " 
 " sourced from  github and my needs.
 " vim documentation: http://vimdoc.sourceforge.net
-" not as well kept as .vimrc :-)
 
-""""""""""""""""""""""
 "
 "" GUI and Looks    ""
 """"""""""""""""""""""
