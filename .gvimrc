@@ -13,6 +13,7 @@ set guioptions=c
 "                e: use tab bar instead of text tab bar!
 set columns=90      " default width
 set lines=135       " default height
+set cursorline      " highlight the current line
 
 "" Font             ""
 """"""""""""""""""""""

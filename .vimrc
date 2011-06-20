@@ -48,7 +48,7 @@ set shiftwidth=4    " number of spaces to use for each (auto) indent
 "
 ""      navigation      ""
 set backspace=indent,eol,start	" backspace goes over everything
-set scrolloff=40    " minimal number of lines to keep above bottom
+set scrolloff=10   " minimal number of lines to keep above bottom
 set sidescrolloff=0 " minimal rows to keep on sides
 set scrolljump=5    " jump by 5 lines when running out of screen space
 set whichwrap+=h,l  " allows h and l to go over EOL
@@ -72,7 +72,6 @@ set incsearch       " incremental search
 set showmatch       " hightlight matching braces
 set matchtime=5     " how many tenths of a second to show highlight
 set wildmenu
-set cursorline      " highlight the current line
 
 
 "

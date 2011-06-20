@@ -1,15 +1,28 @@
 ## .profile
 ## github.com/zmlka
 
-## prompt
-PS1="┌─( \u ) - ( \w )\n└─> "
+##########
+########## prompt
+##########
 
-## turn on colors environment variables:
+# https://wiki.archlinux.org/index.php/Color_Bash_Prompt
+PS1="┌─( \[\e[1;35m\]\u\[\e[0m\] ) - ( \w )\n└─⫸ "
+#           colour purple
+#                     display username
+#                         reset colours
+#                                       absolute path
+#                                           newline
+
+##########
+########## colours
+##########
+
+## turn on colours environment variables:
 export LS_OPTIONS='--color=auto'
 export CLICOLOR=1
 export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
 
-## changing colors:
+## changing colours:
 export LSCOLORS=bxgxdghxfxexaDEcGdcAcE
 
 ## LSCOLORS needs 11 sets of letters indicating fg and bg colors:
@@ -43,13 +56,41 @@ export LSCOLORS=bxgxdghxfxexaDEcGdcAcE
 #	H  bold light grey; looks like bright white
 #	x  default foreground or background
 
-export EDITOR='mvim -f'
+##########
+########## exports
+##########
 
-## aliases
+export EDITOR='mvim -f'
+export GIT_EDITOR='vim'
+
+##########
+########## aliases
+##########
 alias ..='cd ..'
 
-## ls et al
-alias la='ls -la'
-alias lm='ls -lm'
-alias ln='ls -ln'
+## prompt before deletion and overwrite:
+alias cp='cp -i'
+alias mv='mv -i'
+## listing
+alias la='ls -AF'
+alias ln='ls -lnF'
+alias ll='ls -alF'
+
+
+##########
+########## unicode references
+##########
+
+# → ➜ ‣ ➤ ⬆ ⬅ ⤴ • ■ ● ✜ ❤ ☯
+# ✔ ✖ ✚ ★ ☆ ✩ ✱ ✸ ✿
+# ǁ ǂ ʭ Ξ ⣿ ⡇ ⦀⦂ ⦙⦚ ⧘⧙⧚⧛
+# ⪡ ⪢ ⪦⪧ ⫏⫐ ⊲ ⊳ ⫷ ⫸ ❮❯ ‹›⟨⟩⟪⟫ ⦉⦊⦗⦘ ⎨⎬ ❪❫ 〔 〕
+# ⚑ ⚐ ☐ ✆ ✈ ⚠ ⚡ ♪ ♫ ⦨ ⑆ ⑉ ⧎ ⧑
+# ☼ ☀ ☁ ☂
+# ■ □ ▪▫ ▶ ▷▸▹ ► ▻▼▽▾▿◀◁◂◃◄◅ ▬ ▭▮▯○
+# ▢ ▣ ▦ ◈ ⟐ ⧆ ⧇
+# ⊕ ⊝ ⊜ ⊗ ⊙ ⊚ ⦼ ⧀ ⦿ ⧁ ⨂ ⨁ ⨀ ◉ ◌ ◍
+# 〓 █████ ▇▇▇▆▅▅▄▃▂▁▀▗▖▘▙▚▛▜ ◹ ◺ ◸ ◿
+# ⌘ ⌥ ⌦ ⌫ ↵ ↩ ⇧
+
 
