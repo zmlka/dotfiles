@@ -60,9 +60,9 @@ export LSCOLORS=bxgxdghxfxexaDEcGdcAcE
 ########## exports
 ##########
 
-export EDITOR='mvim -f'
+export EDITOR='vim'
 export GIT_EDITOR='vim'
-
+export PATH=/usr/local/bin:$PATH
 ##########
 ########## aliases
 ##########

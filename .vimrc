@@ -97,13 +97,12 @@ set statusline+=%c\]    " column number
 set visualbell          " disbale audiable feedback
 
 "
-""      Colors only     ""
+""      colourful       ""
 
-if &t_Co > 2 || has("gui_running")
-    syntax on       " syntax highlighting
-    set hlsearch    " highlight search results
-endif
-
+colorscheme pablo
+set background=dark
+syntax on       " syntax highlighting
+set hlsearch    " highlight search results
 
 """"""""""""""""""""""""""
 "
@@ -148,7 +147,10 @@ imap <C-p> <Esc>:tabprevious<cr>i
 nmap <F2> a<C-R>=strftime("%a %d.%m.%Y %H:%M %Z")<CR><Esc>
 imap <F2> <C-R>=strftime("%a %d.%m.%Y %H:%M %Z")<CR>
 
+""      gundo           "
+" http://sjl.bitbucket.org/gundo.vim/
 
+nnoremap <F4> :GundoToggle<CR>
 
 
 
