@@ -99,8 +99,8 @@ set visualbell          " disbale audiable feedback
 "
 ""      colourful       ""
 
-colorscheme pablo
-set background=dark
+colorscheme solarized
+set background=light
 syntax on       " syntax highlighting
 set hlsearch    " highlight search results
 
