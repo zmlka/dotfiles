@@ -24,6 +24,9 @@ set maxitems=15
 set complete-=s
 set complete-=l
 
+" colorscheme
+colorscheme simple
+
 """"""""""""""""""""""""""
 "
 ""      Pass Keys       ""

@@ -59,6 +59,10 @@ set ignorecase      " ignore case in search
 set incsearch       " incremental search
 
 "
+""      clipboard       ""
+set clipboard=unnamed   "uses OS X clipboard
+
+"
 ""      opening         ""
 
 " when reopening, jumps to last known position
@@ -99,8 +103,8 @@ set visualbell          " disbale audiable feedback
 "
 ""      colourful       ""
 
-colorscheme solarized
-set background=light
+set background=dark
+" note to self: using argonaut iTerm theme
 syntax on       " syntax highlighting
 set hlsearch    " highlight search results
 
@@ -149,7 +153,6 @@ imap <F2> <C-R>=strftime("%a %d.%m.%Y %H:%M %Z")<CR>
 
 ""      gundo           "
 " http://sjl.bitbucket.org/gundo.vim/
-
 nnoremap <F4> :GundoToggle<CR>
 
 

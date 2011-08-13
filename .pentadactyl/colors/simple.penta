@@ -49,7 +49,7 @@ hi FrameIndicator				  -a background-color: #222222; opacity: 0.5; z-index: 999;
 
 
 "Hint section
-hi Hint							  font-family: Monaco, monospace; font-size: 11px !important; font-weight: bold !important; color: #ffffff !important; background-color: #FFFF66 !important; border: solid 1px #000000 !important; position: absolute !important;
+hi Hint							  font-family: Monaco, monospace; font-size: 11px !important; font-weight: normal; !important; color: #000000 !important; background-color: #FFFF66 !important; border: solid 1px #000000 !important; position: absolute !important;
 hi Hint::after					  content: attr(number);
 hi HintActive					  background: #4682b4 !important; color: #ffffff !important;
 hi HintElem						  background-color: inherit !important;
