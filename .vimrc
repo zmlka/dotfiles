@@ -118,7 +118,7 @@ set hlsearch    " highlight search results
 
 " save diary entries in the same directory as normal entries
 " allows for linking to wiki entries from diary
-let g:vimwiki_list = [{'path': '~/Documents/vimwiki/', 'path_html': '~/Documents/vimwiki_html/', 'diary_rel_path' : ''}]
+let g:vimwiki_list = [{'path': '~/Documents/vimwiki/', 'path_html': '~/Documents/vimwiki_html/', 'diary_rel_path' : 'diary/'}]
 let g:vimwiki_camel_case = 0 " disable CamelCase in vimwiki
 
 
