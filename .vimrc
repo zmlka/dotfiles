@@ -47,10 +47,11 @@ set shiftwidth=4    " number of spaces to use for each (auto) indent
 
 "
 ""      navigation      ""
-set backspace=indent,eol,start	" backspace goes over everything
-set scrolloff=10   " minimal number of lines to keep above bottom
-set sidescrolloff=0 " minimal rows to keep on sides
-set scrolljump=5    " jump by 5 lines when running out of screen space
+set backspace=indent,eol,start  " backspace goes over everything
+set scrolloff=5     " minimal number of lines to keep above bottom
+set sidescrolloff=3 " minimal rows to keep on sides
+"set scrolljump=5    " jump by 5 lines when running out of screen space
+"           above is not necessary due to scrolloff
 set whichwrap+=h,l  " allows h and l to go over EOL
 
 "
@@ -83,7 +84,8 @@ set nowrap          " disable line wrapping for long lines
 ""      static items    ""
 set showcmd         " display an incomplete commands 
 set ruler           " always display the current cursor position 
-set number          " show line numbers
+" set number          " show line numbers
+set relativenumber  " line numbers relative to currnent cursor position
 
 "
 ""      status line     ""
@@ -106,6 +108,11 @@ set visualbell          " disbale audiable feedback
 set list                " show tabs and end of lines
 set listchars=trail:•,precedes:«,extends:»
 
+"
+""      indent guides   ""
+
+" Show indent guides by default
+let g:indent_guides_enable_on_vim_startup = 1
 
 "
 ""      colourful       ""
@@ -134,9 +141,13 @@ let g:vimwiki_global_ext = 0 " make only files in the wiki path be opened as wik
 "" key remapings        ""
 """"""""""""""""""""""""""
 
-""      scrolling
-noremap J 10j       " remap J to scroll up by more lines
-noremap K 10k       " remap K to scroll up by more lines
+""      easier key navigation
+" if you need to use Join just use :join
+
+nnoremap J 10j
+vnoremap J 10j
+nnoremap K 10k
+vnoremap K 10k
 
 
 ""      split navigation
@@ -145,6 +156,8 @@ map <C-j> <C-w><Down>
 map <C-l> <C-w><Right>
 map <C-h> <C-w><Left>
 
+""      folds           "
+nnoremap <space> za " use spaace to toggle folds
 
 ""      tab navigation  "
 map <C-n> :tabnext<cr>

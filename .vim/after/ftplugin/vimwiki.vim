@@ -9,7 +9,7 @@
 "" editing "
 """""""""""""""""""""""""
 
-setlocal nospell " spelling
+setlocal spell" spelling
 setlocal spelllang=en_gb "
 setlocal tw=79 " textwidth
 setlocal tabstop=2 " number of spaces that <tab> counts for

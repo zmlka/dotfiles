@@ -38,23 +38,23 @@ export LSCOLORS=bxgxdghxfxexaDEcGdcAcE
 #  10. directory writable to others, with sticky bit
 #  11. directory writable to others, without sticky bit
 ## The possible letters to use are:
-# 	a  black
-#	b  red
-#	c  green
-#	d  brown
-#	e  blue
-#	f  magenta
-#	g  cyan
-#	h  light grey
-#	A  block black, usually shows up as dark grey
-#	B  bold red
-#	C  bold green
-#	D  bold brown, usually shows up as yellow
-#	E  bold blue
-#	F  bold magenta
-#	G  bold cyan
-#	H  bold light grey; looks like bright white
-#	x  default foreground or background
+# a  black
+# b  red
+# c  green
+# d  brown
+# e  blue
+# f  magenta
+# g  cyan
+# h  light grey
+# A  block black, usually shows up as dark grey
+# B  bold red
+# C  bold green
+# D  bold brown, usually shows up as yellow
+# E  bold blue
+# F  bold magenta
+# G  bold cyan
+# H  bold light grey; looks like bright white
+# x  default foreground or background
 
 ##########
 ########## exports
@@ -76,6 +76,8 @@ alias la='ls -AF'
 alias ln='ls -lnF'
 alias ll='ls -alF'
 
+## scripts
+alias shoes="/Applications/Shoes.app/Contents/MacOS/shoes"
 
 ##########
 ########## unicode references
