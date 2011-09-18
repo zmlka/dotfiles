@@ -76,9 +76,6 @@ alias la='ls -AF'
 alias ln='ls -lnF'
 alias ll='ls -alF'
 
-## scripts
-alias shoes="/Applications/Shoes.app/Contents/MacOS/shoes"
-
 ##########
 ########## unicode references
 ##########

@@ -41,8 +41,6 @@ set shiftround      " round indent to multiple of shiftwidth
 "
 ""      indenting       ""
 set autoindent      " copy indent from the current line to  new line
-set smartindent     " smart autoindenting when starting a new line. Use
-                    " in conjunction with autoindent
 set shiftwidth=4    " number of spaces to use for each (auto) indent
 
 "
@@ -128,13 +126,8 @@ set hlsearch    " highlight search results
 """"""""""""""""""""""""""
 
 "
-""      vimwiki         ""
-
-" save diary entries in the same directory as normal entries
-" allows for linking to wiki entries from diary
-let g:vimwiki_list = [{'path': '~/Documents/vimwiki/', 'path_html': '~/Documents/vimwiki_html/', 'diary_rel_path' : 'diary/', 'syntax': 'markdown', 'ext' : '.md'}]
-let g:vimwiki_camel_case = 0 " disable CamelCase in vimwiki
-let g:vimwiki_global_ext = 0 " make only files in the wiki path be opened as wiki files
+""      processing      ""
+let processing_doc_path="/Applications/Processing.app/Contents/Resources/Java/modes/java/reference"
 
 """"""""""""""""""""""""""
 "
@@ -171,13 +164,24 @@ imap <C-p> <Esc>:tabprevious<cr>i
 nmap <F2> a<C-R>=strftime("%a %d.%m.%Y %H:%M %Z")<CR><Esc>
 imap <F2> <C-R>=strftime("%a %d.%m.%Y %H:%M %Z")<CR>
 
+""""""""""""""""""""""""""
+"
+""      plugins         ""
+""""""""""""""""""""""""""
+
+"
 ""      gundo           "
 " http://sjl.bitbucket.org/gundo.vim/
 nnoremap <F4> :GundoToggle<CR>
 
+"
+""      vimwiki         ""
 
-
-
+" save diary entries in the same directory as normal entries
+" allows for linking to wiki entries from diary
+let g:vimwiki_list = [{'path': '~/Documents/vimwiki/', 'path_html': '~/Documents/vimwiki_html/', 'diary_rel_path' : 'diary/', 'syntax': 'markdown', 'ext' : '.md'}]
+let g:vimwiki_camel_case = 0 " disable CamelCase in vimwiki
+let g:vimwiki_global_ext = 0 " make only files in the wiki path be opened as wiki files
 
 
 
