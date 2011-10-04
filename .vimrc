@@ -179,10 +179,10 @@ nnoremap <F4> :GundoToggle<CR>
 
 " save diary entries in the same directory as normal entries
 " allows for linking to wiki entries from diary
-let g:vimwiki_list = [{'path': '~/Documents/vimwiki/', 'path_html': '~/Documents/vimwiki_html/', 'diary_rel_path' : 'diary/', 'syntax': 'markdown', 'ext' : '.md'}]
+let g:vimwiki_list = [{'path': '~/Documents/vimwiki/', 'path_html': '~/Documents/vimwiki_html/', 'diary_rel_path' : 'diary/', 'syntax': 'markdown', 'ext' : '.md', 'maxhi' : 0}]
 let g:vimwiki_camel_case = 0 " disable CamelCase in vimwiki
 let g:vimwiki_global_ext = 0 " make only files in the wiki path be opened as wiki files
-
+let g:vimwiki_folding = 1 " turn on folding
 
 
 
