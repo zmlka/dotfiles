@@ -151,6 +151,8 @@ map <C-h> <C-w><Left>
 
 ""      folds           "
 nnoremap <space> za " use spaace to toggle folds
+nnoremap <F4> zR " use F4 to open all folds
+nnoremap <F5> zM " use F5 to close all folds
 
 ""      tab navigation  "
 map <C-n> :tabnext<cr>
@@ -164,6 +166,15 @@ imap <C-p> <Esc>:tabprevious<cr>i
 nmap <F2> a<C-R>=strftime("%a %d.%m.%Y %H:%M %Z")<CR><Esc>
 imap <F2> <C-R>=strftime("%a %d.%m.%Y %H:%M %Z")<CR>
 
+
+""      open in Marked  "
+" make sure that Marked is the default for .md files
+map <F8> :!open "%"<CR><CR>
+
+
+""      toggle spell    "
+map <F7> :set spell! spell? spl=en_gb<CR> 
+
 """"""""""""""""""""""""""
 "
 ""      plugins         ""
@@ -172,7 +183,7 @@ imap <F2> <C-R>=strftime("%a %d.%m.%Y %H:%M %Z")<CR>
 "
 ""      gundo           "
 " http://sjl.bitbucket.org/gundo.vim/
-nnoremap <F4> :GundoToggle<CR>
+nnoremap <F3> :GundoToggle<CR>
 
 "
 ""      vimwiki         ""
@@ -182,7 +193,7 @@ nnoremap <F4> :GundoToggle<CR>
 let g:vimwiki_list = [{'path': '~/Documents/vimwiki/', 'path_html': '~/Documents/vimwiki_html/', 'diary_rel_path' : 'diary/', 'syntax': 'markdown', 'ext' : '.md', 'maxhi' : 0}]
 let g:vimwiki_camel_case = 0 " disable CamelCase in vimwiki
 let g:vimwiki_global_ext = 0 " make only files in the wiki path be opened as wiki files
-let g:vimwiki_folding = 1 " turn on folding
+" let g:vimwiki_folding = 1 " turn on folding
 
 
 

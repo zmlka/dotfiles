@@ -20,9 +20,9 @@ set cursorline      " highlight the current line
 " it's important to use a font that has a bold and italic typeface as vimwiki
 " takes advantage of the conceal feature in order to display italics and bold
 " dynamically.
-set guifont=Bitstream\ Vera\ Sans\ Mono:h12
+set guifont=Monaco:h12
 " since bitstream is pretty compact on y-height, make spaces larger
-set linespace=1
+" set linespace=1
 
 "" Colorscheme      ""
 """"""""""""""""""""""
