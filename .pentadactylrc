@@ -33,7 +33,8 @@ colorscheme simple
 """"""""""""""""""""""""""
 " Google Experimental Search
 " http://www.google.com/experimental/
-set passkeys+='google\.com':jk<Return><S-Return><Esc>/
+" set passkeys+='google\.com':jk<Return><S-Return><Esc>/
+"" no longer relevant since they disabled my blessed experiment
 
 """"""""""""""""""""""""""
 "

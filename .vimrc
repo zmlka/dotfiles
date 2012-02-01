@@ -129,6 +129,10 @@ set hlsearch    " highlight search results
 ""      processing      ""
 let processing_doc_path="/Applications/Processing.app/Contents/Resources/Java/modes/java/reference"
 
+"
+""      markdown        ""
+au BufRead,BufNewFile *.md set filetype=markdown
+
 """"""""""""""""""""""""""
 "
 "" key remapings        ""
@@ -190,7 +194,8 @@ nnoremap <F3> :GundoToggle<CR>
 
 " save diary entries in the same directory as normal entries
 " allows for linking to wiki entries from diary
-let g:vimwiki_list = [{'path': '~/Documents/vimwiki/', 'path_html': '~/Documents/vimwiki_html/', 'diary_rel_path' : 'diary/', 'syntax': 'markdown', 'ext' : '.md', 'maxhi' : 0}]
+let g:vimwiki_list = [{'path': '~/Documents/vimwiki/', 'path_html': '~/Documents/vimwiki_html/', 'diary_rel_path' : 'diary/', 'syntax': 'markdown', 'ext' : '.md', 'maxhi' : 0},
+    \ {'path': '~/Documents/forlorn/forlorn.wiki/', 'path_html': '~/Documents/forlorn/forlorn.wiki/html/', 'index': 'Home', 'syntax': 'markdown', 'ext': '.md', 'maxhi' : 0} ]
 let g:vimwiki_camel_case = 0 " disable CamelCase in vimwiki
 let g:vimwiki_global_ext = 0 " make only files in the wiki path be opened as wiki files
 " let g:vimwiki_folding = 1 " turn on folding
