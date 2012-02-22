@@ -1,7 +1,7 @@
 "
 " www.github.com/zmlka
 " my .pentadactylrc to be used on OS X
-" 
+"
 " sourced from  github and my needs.
 " documentation: http://dactyl.sourceforge.net/help/pentadactyl/
 "
@@ -21,8 +21,8 @@ set guioptions-=r
 set maxitems=15
 
 " don't show search suggestions or local files
-set complete-=s
-set complete-=l
+" set complete-=s
+" set complete-=l
 
 " colorscheme
 colorscheme simple
@@ -44,3 +44,7 @@ colorscheme simple
 " capital J and K jump by 10 lines
 nmap J 10j
 nmap K 10k
+
+" prevent mediawikis from stealing keys
+" http://www.mozdev.org/pipermail/vimperator/2009-April/004221.html
+set! ui.key.contentAccess=3
