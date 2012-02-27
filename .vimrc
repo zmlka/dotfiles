@@ -111,23 +111,27 @@ set listchars=trail:•,precedes:«,extends:»
 
 " Show indent guides by default
 let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_auto_colors = 0     " turn off default colours
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd guibg=green ctermbg=green
+" leave odd one undefined, that way only every oter column will get
+" highlighted:
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=black ctermbg=black
 
 "
 ""      colourful       ""
 
 set background=dark
-" note to self: using argonaut iTerm theme
+" note to self: using solarized high contrast theme
 syntax on       " syntax highlighting
 set hlsearch    " highlight search results
+set cursorline
 
 """"""""""""""""""""""""""
 "
 "" filetype specific    ""
 """"""""""""""""""""""""""
 
-"
-""      processing      ""
-let processing_doc_path="/Applications/Processing.app/Contents/Resources/Java/modes/java/reference"
+" these have mostly been moved to .vim/after or .vim/ftplugin
 
 "
 ""      markdown        ""
@@ -171,7 +175,7 @@ nmap <F2> a<C-R>=strftime("%a %d.%m.%Y %H:%M %Z")<CR><Esc>
 imap <F2> <C-R>=strftime("%a %d.%m.%Y %H:%M %Z")<CR>
 
 
-""      open in Marked  "
+""      open in default program
 " make sure that Marked is the default for .md files
 map <F8> :!open "%"<CR><CR>
 
