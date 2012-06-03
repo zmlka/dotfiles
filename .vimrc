@@ -87,17 +87,22 @@ set relativenumber  " line numbers relative to currnent cursor position
 
 "
 ""      status line     ""
-set laststatus=2        " always display the status line
-set statusline=
-set statusline+=%t\     " file name (tail) of file in the buffer
-set statusline+=%r\     " readonly flag, text is [RO]
-set statusline+=%y\     " type of file in the buffer, e.g., [vim]
-set statusline+=%m\     " modified flag, text is [+] 
-set statusline+=%=\     " separation point between left/right
-set statusline+=\[%{&fo}\]\     " displays formating options
-set statusline+=\(%P\)\ " window showing percentage through file
-set statusline+=\[%l\,\ " line number
-set statusline+=%c\]    " column number
+" 
+ set laststatus=2        " always display the status line
+" set statusline=
+" set statusline+=%t\     " file name (tail) of file in the buffer
+" set statusline+=%r\     " readonly flag, text is [RO]
+" set statusline+=%y\     " type of file in the buffer, e.g., [vim]
+" set statusline+=%m\     " modified flag, text is [+] 
+" set statusline+=%=\     " separation point between left/right
+" set statusline+=\[%{&fo}\]\     " displays formating options
+" set statusline+=\(%P\)\ " window showing percentage through file
+" set statusline+=\[%l\,\ " line number
+" set statusline+=%c\]    " column number
+
+"
+""      powerline       ""
+let g:Powerline_stl_path_style = "filename"
 
 set visualbell          " disbale audiable feedback
 

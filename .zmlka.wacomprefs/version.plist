@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>VersionKeyBuild</key>
-	<integer>5</integer>
+	<integer>4</integer>
 	<key>VersionKeyMajor</key>
 	<integer>6</integer>
 	<key>VersionKeyMinor</key>
-	<integer>1</integer>
-	<key>VersionKeyRelease</key>
 	<integer>2</integer>
+	<key>VersionKeyRelease</key>
+	<integer>3</integer>
 	<key>VersionKeyVariation</key>
-	<integer>7</integer>
+	<integer>0</integer>
 </dict>
 </plist>
