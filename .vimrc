@@ -1,7 +1,7 @@
 "
 " www.github.com/zmlka
 " my .vimrc to be used with MacVim
-" 
+"
 " sourced from  github and my needs.
 " vim documentation: http://vimdoc.sourceforge.net
 "
@@ -59,13 +59,17 @@ set incsearch       " incremental search
 
 "
 ""      clipboard       ""
-set clipboard=unnamed   "uses OS X clipboard
+set clipboard=unnamed   " uses OS X clipboard
 
 "
 ""      opening         ""
 
 " when reopening, jumps to last known position
 :au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+
+"
+""      omni complete   ""
+set completeopt=menuone,longest,preview
 
 """"""""""""""""""""""""""
 "
@@ -74,7 +78,8 @@ set clipboard=unnamed   "uses OS X clipboard
 
 set showmatch       " hightlight matching braces
 set matchtime=5     " how many tenths of a second to show highlight
-set wildmenu
+set wildmenu        " tab based completino for commands
+set wildmode=longest,list,full      " fill screen with all possible completions
 set nowrap          " disable line wrapping for long lines
 
 
@@ -112,17 +117,6 @@ set list                " show tabs and end of lines
 set listchars=trail:•,precedes:«,extends:»
 
 "
-""      indent guides   ""
-
-" Show indent guides by default
-let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_auto_colors = 0     " turn off default colours
-" autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd guibg=green ctermbg=green
-" leave odd one undefined, that way only every oter column will get
-" highlighted:
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=black ctermbg=black
-
-"
 ""      colourful       ""
 
 set background=dark
@@ -136,11 +130,18 @@ set cursorline
 "" filetype specific    ""
 """"""""""""""""""""""""""
 
-" these have mostly been moved to .vim/after or .vim/ftplugin
+" most of this lives in /after/ftplugin, but due to the nature of /after it is
+" necessary to put certain functions here
 
 "
 ""      markdown        ""
 au BufRead,BufNewFile *.md set filetype=markdown
+
+au BufRead,BufNewFile *.tex let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
+
+au BufRead,BufNewFile *.vimwiki let g:SuperTabDefaultCompletionType = "<C-X><C-I>"
+au BufRead,BufNewFile *.markdown let g:SuperTabDefaultCompletionType = "<C-X><C-I"
+
 
 """"""""""""""""""""""""""
 "
@@ -209,7 +210,20 @@ let g:vimwiki_camel_case = 0 " disable CamelCase in vimwiki
 let g:vimwiki_global_ext = 0 " make only files in the wiki path be opened as wiki files
 " let g:vimwiki_folding = 1 " turn on folding
 
+"
+"" vim-pad              ""
+let g:pad_dir = "~/notes/"
 
+"
+""      indent guides   ""
+
+" Show indent guides by default
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_auto_colors = 0     " turn off default colours
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd guibg=green ctermbg=green
+" leave odd one undefined, that way only every oter column will get
+" highlighted:
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=black ctermbg=black
 
 
 

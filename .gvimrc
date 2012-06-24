@@ -1,7 +1,7 @@
 "
 " www.github.com/zmlka
-" my .gvimrc to be used with MacVim
-" 
+" .gvimrc to be used with MacVim
+"
 " sourced from  github and my needs.
 " vim documentation: http://vimdoc.sourceforge.net
 
@@ -21,8 +21,6 @@ set cursorline      " highlight the current line
 " takes advantage of the conceal feature in order to display italics and bold
 " dynamically.
 set guifont=Monaco:h12
-" since bitstream is pretty compact on y-height, make spaces larger
-" set linespace=1
 
 "" Colorscheme      ""
 """"""""""""""""""""""

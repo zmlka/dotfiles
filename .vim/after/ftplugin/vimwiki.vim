@@ -9,8 +9,8 @@
 "" editing "
 """""""""""""""""""""""""
 
-" setlocal spell" spelling
-setlocal spelllang=en_gb "
+" setlocal spell " spelling
+setlocal spelllang=en_gb
 setlocal tw=79 " textwidth
 setlocal tabstop=4 " number of spaces that <tab> counts for
 setlocal softtabstop=4 " backspace over two spaces
