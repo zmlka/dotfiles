@@ -10,6 +10,7 @@
 """""""""""""""""""""""""
 
 " setlocal spell " spelling
+setlocal formatoptions+=tcqlnro
 setlocal spelllang=en_gb
 setlocal tw=79 " textwidth
 setlocal tabstop=4 " number of spaces that <tab> counts for
