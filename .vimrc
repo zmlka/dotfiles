@@ -204,15 +204,10 @@ nnoremap <F3> :GundoToggle<CR>
 
 " save diary entries in the same directory as normal entries
 " allows for linking to wiki entries from diary
-let g:vimwiki_list = [{'path': '~/Documents/vimwiki/', 'path_html': '~/Documents/vimwiki_html/', 'diary_rel_path' : 'diary/', 'syntax': 'markdown', 'ext' : '.md', 'maxhi' : 0},
-    \ {'path': '~/Documents/forlorn/forlorn.wiki/', 'path_html': '~/Documents/forlorn/forlorn.wiki/html/', 'index': 'Home', 'syntax': 'markdown', 'ext': '.md', 'maxhi' : 0} ]
-let g:vimwiki_camel_case = 0 " disable CamelCase in vimwiki
+let g:vimwiki_list = [{'path': '~/Documents/vimwiki/', 'path_html': '~/Documents/vimwiki_html/', 'syntax': 'markdown', 'ext' : '.md', 'maxhi' : 0, 'diary_sort' : 'asc'}]
 let g:vimwiki_global_ext = 0 " make only files in the wiki path be opened as wiki files
+let g:vimwiki_use_calendar = 1 " use calendar.vim
 " let g:vimwiki_folding = 1 " turn on folding
-
-"
-"" vim-pad              ""
-let g:pad_dir = "~/notes/"
 
 "
 ""      indent guides   ""
@@ -224,6 +219,10 @@ let g:indent_guides_auto_colors = 0     " turn off default colours
 " leave odd one undefined, that way only every oter column will get
 " highlighted:
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=black ctermbg=black
+
+"
+""      calendar-vim    ""
+let g:calendar_monday = 1
 
 
 
