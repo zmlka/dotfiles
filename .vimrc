@@ -63,7 +63,6 @@ set clipboard=unnamed   " uses OS X clipboard
 
 "
 ""      opening         ""
-
 " when reopening, jumps to last known position
 :au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 
@@ -88,12 +87,14 @@ set nowrap          " disable line wrapping for long lines
 set showcmd         " display an incomplete commands 
 set ruler           " always display the current cursor position 
 " set number          " show line numbers
-set relativenumber  " line numbers relative to currnent cursor position
+set relativenumber  " ruler numbers relative to currnent cursor position
 
 "
 ""      status line     ""
 " 
  set laststatus=2        " always display the status line
+"
+"" The below has been made obsolete by the powerline plugin
 " set statusline=
 " set statusline+=%t\     " file name (tail) of file in the buffer
 " set statusline+=%r\     " readonly flag, text is [RO]
@@ -114,34 +115,42 @@ set visualbell          " disbale audiable feedback
 "
 ""      whitespeace     ""
 set list                " show tabs and end of lines
-set listchars=trail:•,precedes:«,extends:»
+set listchars=trail:•,precedes:«,extends:»  " shows these unicode charachters
+                                            " to highlight whitespace and
+                                            " extended lines
 
 "
 ""      colourful       ""
 
 set background=dark
-" note to self: using solarized high contrast theme
+" note to self: using solarized high contrast theme in iTerm
 syntax on       " syntax highlighting
 set hlsearch    " highlight search results
-set cursorline
+set cursorline  " highlights current line
 
 """"""""""""""""""""""""""
 "
 "" filetype specific    ""
 """"""""""""""""""""""""""
 
-" most of this lives in /after/ftplugin, but due to the nature of /after it is
-" necessary to put certain functions here
+" most of the filetype customisations live in /after/ftplugin, but due to the
+" nature of /after only being called once a file is opened, it is necessary to
+" do certain auto (au) commands
 
 "
 ""      markdown        ""
 au BufRead,BufNewFile *.md set filetype=markdown
+" use .md extension for 'normal' markdown files
 
+"
+""      LaTeX           ""
 au BufRead,BufNewFile *.tex let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
+" omni completion
 
 au BufRead,BufNewFile *.vimwiki let g:SuperTabDefaultCompletionType = "<C-X><C-I>"
 au BufRead,BufNewFile *.markdown let g:SuperTabDefaultCompletionType = "<C-X><C-I"
-
+" .markdown is used for vimwiki markdown files. Completion based on words in
+" current document
 
 """"""""""""""""""""""""""
 "
@@ -149,12 +158,13 @@ au BufRead,BufNewFile *.markdown let g:SuperTabDefaultCompletionType = "<C-X><C-
 """"""""""""""""""""""""""
 
 ""      easier key navigation
-" if you need to use Join just use :join
 
 nnoremap J 10j
 vnoremap J 10j
 nnoremap K 10k
 vnoremap K 10k
+" Capital letter jumps 10x as much
+" if you need to use Join just use :join
 
 
 ""      split navigation
@@ -171,23 +181,25 @@ nnoremap <F5> zM " use F5 to close all folds
 ""      tab navigation  "
 map <C-n> :tabnext<cr>
 map <C-p> :tabprevious<cr>
-imap <C-n> <Esc>:tabnext<cr>i 
+imap <C-n> <Esc>:tabnext<cr>i
 imap <C-p> <Esc>:tabprevious<cr>i
 
 ""      insert time     "
 " http://vim.wikia.com/wiki/VimTip97
-" man 3 strftime for an expanation of the notation
+" check manpage of strftime for an expanation of the notation
 nmap <F2> a<C-R>=strftime("%a %d.%m.%Y %H:%M %Z")<CR><Esc>
 imap <F2> <C-R>=strftime("%a %d.%m.%Y %H:%M %Z")<CR>
 
 
-""      open in default program
-" make sure that Marked is the default for .md files
+""      open currnet folder with default program
 map <F8> :!open "%"<CR><CR>
+" make sure that Marked is the default for .md files
 
 
 ""      toggle spell    "
 map <F7> :set spell! spell? spl=en_gb<CR> 
+
+
 
 """"""""""""""""""""""""""
 "
@@ -202,19 +214,19 @@ nnoremap <F3> :GundoToggle<CR>
 "
 ""      vimwiki         ""
 
-" save diary entries in the same directory as normal entries
-" allows for linking to wiki entries from diary
 let g:vimwiki_list = [{'path': '~/Documents/vimwiki/', 'path_html': '~/Documents/vimwiki_html/', 'syntax': 'markdown', 'ext' : '.md', 'maxhi' : 0, 'diary_sort' : 'asc'}]
-let g:vimwiki_global_ext = 0 " make only files in the wiki path be opened as wiki files
-let g:vimwiki_use_calendar = 1 " use calendar.vim
-" let g:vimwiki_folding = 1 " turn on folding
+" the above puts diary entries in the same root directory as wiki entries
+" allows for linking to wiki entries from diary entries. Use markdown.
+let g:vimwiki_global_ext = 0        " make only files in the wiki path be
+                                    " opened as wiki files
+let g:vimwiki_use_calendar = 1      " use calendar.vim
+" let g:vimwiki_folding = 1         " turn on folding
 
 "
 ""      indent guides   ""
 
-" Show indent guides by default
-let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_auto_colors = 0     " turn off default colours
+let g:indent_guides_enable_on_vim_startup = 1   " show indent guides by default
+let g:indent_guides_auto_colors = 0             " turn off default colours
 " autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd guibg=green ctermbg=green
 " leave odd one undefined, that way only every oter column will get
 " highlighted:
@@ -222,13 +234,5 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=black ctermbg=black
 
 "
 ""      calendar-vim    ""
-let g:calendar_monday = 1
-
-
-
-
-
-
-
-
+let g:calendar_monday = 1   " week starts on monday
 
