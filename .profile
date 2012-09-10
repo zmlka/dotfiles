@@ -77,8 +77,6 @@ alias la='ls -AF'
 alias ln='ls -lnF'
 alias ll='ls -alF'
 
-## alias to love
-alias love="/Applications/love.app/Contents/MacOS/love"
 
 
 
