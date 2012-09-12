@@ -27,8 +27,11 @@ set guifont=Monaco:h12
 
 " moria colorscheme, further instructions:
 " http://www.vim.org/scripts/script.php?script_id=1464
-set background=dark
-colorscheme moria
+" set background=dark
+" colorscheme moria
+
+" tomorrow theme colorscheme:
+colorscheme Tomorrow Night
 
 
 """"""""""""""""""""""

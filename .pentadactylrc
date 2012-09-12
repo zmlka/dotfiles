@@ -48,3 +48,12 @@ nmap K 10k
 " prevent mediawikis from stealing keys
 " http://www.mozdev.org/pipermail/vimperator/2009-April/004221.html
 set! ui.key.contentAccess=3
+
+""""""""""""""""""""""""""
+"
+""      External Editor ""
+""""""""""""""""""""""""""
+" mvim won't work on OSX if the full path is not there
+" http://phaseportrait.blogspot.com/2008/12/making-macvim-work-with-vimperators.html 
+set exitor="/usr/local/bin/mvim -f"
+
