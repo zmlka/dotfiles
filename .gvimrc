@@ -12,7 +12,7 @@ set guioptions=c
 "              c: don;t pop up windows, use the console instead
 "                e: use tab bar instead of text tab bar!
 set columns=90      " default width
-set lines=135       " default height
+set lines=90        " default height
 set cursorline      " highlight the current line
 
 "" Font             ""
@@ -31,7 +31,7 @@ set guifont=Monaco:h12
 " colorscheme moria
 
 " tomorrow theme colorscheme:
-colorscheme Tomorrow Night
+colorscheme jellybeans
 
 
 """"""""""""""""""""""

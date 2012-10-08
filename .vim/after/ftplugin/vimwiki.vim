@@ -17,3 +17,7 @@ setlocal tabstop=4 " number of spaces that <tab> counts for
 setlocal softtabstop=4 " backspace over two spaces
 setlocal expandtab " inserts spaces whenever tab is pressed
 setlocal shiftround " round indent to multiple of shiftwidth
+
+" https://github.com/jiangmiao/auto-pairs/issues/19
+let g:AutoPairsMapCR = 0
+

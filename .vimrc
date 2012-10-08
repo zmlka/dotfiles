@@ -222,7 +222,7 @@ let g:vimwiki_global_ext = 0        " make only files in the wiki path be
 let g:vimwiki_use_calendar = 1      " use calendar.vim
 " let g:vimwiki_folding = 1         " turn on folding
 
-"
+
 ""      indent guides   ""
 
 let g:indent_guides_enable_on_vim_startup = 1   " show indent guides by default
@@ -235,4 +235,12 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=black ctermbg=black
 "
 ""      calendar-vim    ""
 let g:calendar_monday = 1   " week starts on monday
+
+
+"
+""     AutoParis       ""
+
+" add typographic quotes to be paired
+
+let g:AutoPairs = {'(':')', '[':']', '{':'}',"'":"'",'"':'"', '`':'`', '‘':'’','“':'”','«':'»'}
 
