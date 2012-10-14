@@ -46,8 +46,8 @@ set shiftwidth=4    " number of spaces to use for each (auto) indent
 "
 ""      navigation      ""
 set backspace=indent,eol,start  " backspace goes over everything
-set scrolloff=5     " minimal number of lines to keep above bottom
-set sidescrolloff=3 " minimal rows to keep on sides
+set scrolloff=8     " minimal number of lines to keep above bottom
+set sidescrolloff=5 " minimal rows to keep on sides
 "set scrolljump=5    " jump by 5 lines when running out of screen space
 "           above is not necessary due to scrolloff
 set whichwrap+=h,l  " allows h and l to go over EOL
@@ -241,6 +241,5 @@ let g:calendar_monday = 1   " week starts on monday
 ""     AutoParis       ""
 
 " add typographic quotes to be paired
-
 let g:AutoPairs = {'(':')', '[':']', '{':'}',"'":"'",'"':'"', '`':'`', '‘':'’','“':'”','«':'»'}
 
