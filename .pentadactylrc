@@ -49,6 +49,9 @@ nmap K 10k
 " http://www.mozdev.org/pipermail/vimperator/2009-April/004221.html
 set! ui.key.contentAccess=3
 
+" maps s to open new tab in the background
+nmap s <esc>:t!<space>
+
 """"""""""""""""""""""""""
 "
 ""      External Editor ""

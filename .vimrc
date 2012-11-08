@@ -197,7 +197,7 @@ map <F8> :!open "%"<CR><CR>
 
 
 ""      toggle spell    "
-map <F7> :set spell! spell? spl=en_gb<CR> 
+map <F7> :set spell! spell? spl=en_gb<CR>
 
 
 
@@ -214,12 +214,9 @@ nnoremap <F3> :GundoToggle<CR>
 "
 ""      vimwiki         ""
 
-let g:vimwiki_list = [{'path': '~/Documents/vimwiki/', 'path_html': '~/Documents/vimwiki_html/', 'syntax': 'markdown', 'ext' : '.md', 'maxhi' : 0, 'diary_sort' : 'asc'}]
-" the above puts diary entries in the same root directory as wiki entries
-" allows for linking to wiki entries from diary entries. Use markdown.
+let g:vimwiki_list = [{'path': '~/Sites/zmlka/', 'diary_rel_path':'_private/' , 'syntax': 'markdown', 'ext' : '.md', 'maxhi' : 0, 'diary_sort' : 'asc'}]
 let g:vimwiki_global_ext = 0        " make only files in the wiki path be
                                     " opened as wiki files
-let g:vimwiki_use_calendar = 1      " use calendar.vim
 " let g:vimwiki_folding = 1         " turn on folding
 
 
@@ -231,10 +228,6 @@ let g:indent_guides_auto_colors = 0             " turn off default colours
 " leave odd one undefined, that way only every oter column will get
 " highlighted:
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=black ctermbg=black
-
-"
-""      calendar-vim    ""
-let g:calendar_monday = 1   " week starts on monday
 
 
 "

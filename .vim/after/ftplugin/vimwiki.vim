@@ -21,3 +21,4 @@ setlocal shiftround " round indent to multiple of shiftwidth
 " https://github.com/jiangmiao/auto-pairs/issues/19
 let g:AutoPairsMapCR = 0
 
+nmap <F4> i---<CR>layout: <CR>title: <CR>date: <CR>categories: [  ]<CR>tags: <CR>---<CR><CR><ESC>
