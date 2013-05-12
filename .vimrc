@@ -46,7 +46,7 @@ set shiftwidth=4    " number of spaces to use for each (auto) indent
 "
 ""      navigation      ""
 set backspace=indent,eol,start  " backspace goes over everything
-set scrolloff=8     " minimal number of lines to keep above bottom
+set scrolloff=14     " minimal number of lines to keep above bottom
 set sidescrolloff=5 " minimal rows to keep on sides
 "set scrolljump=5    " jump by 5 lines when running out of screen space
 "           above is not necessary due to scrolloff
@@ -122,7 +122,7 @@ set listchars=trail:•,precedes:«,extends:»  " shows these unicode charachter
 "
 ""      colourful       ""
 
-set background=dark
+set background=light
 " note to self: using solarized high contrast theme in iTerm
 syntax on       " syntax highlighting
 set hlsearch    " highlight search results
@@ -147,6 +147,9 @@ au BufRead,BufNewFile *.md set filetype=markdown
 au BufRead,BufNewFile *.tex let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 " omni completion
 
+
+"
+""      VimWiki""
 au BufRead,BufNewFile *.vimwiki let g:SuperTabDefaultCompletionType = "<C-X><C-I>"
 au BufRead,BufNewFile *.markdown let g:SuperTabDefaultCompletionType = "<C-X><C-I"
 " .markdown is used for vimwiki markdown files. Completion based on words in
@@ -223,16 +226,19 @@ let g:vimwiki_global_ext = 0        " make only files in the wiki path be
 ""      indent guides   ""
 
 let g:indent_guides_enable_on_vim_startup = 1   " show indent guides by default
-let g:indent_guides_auto_colors = 0             " turn off default colours
+let g:indent_guides_auto_colors = 1             " turn off default colours
 " autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd guibg=green ctermbg=green
 " leave odd one undefined, that way only every oter column will get
 " highlighted:
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=black ctermbg=black
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=black ctermbg=black
 
 
 "
 ""     AutoParis       ""
 
 " add typographic quotes to be paired
-let g:AutoPairs = {'(':')', '[':']', '{':'}',"'":"'",'"':'"', '`':'`', '‘':'’','“':'”','«':'»'}
+let g:AutoPairs = {'(':')', '[':']', '{':'}'}
 
+"
+""    powerline       ""
+let g:Powerline_colorscheme = 'solarized'
