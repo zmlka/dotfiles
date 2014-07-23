@@ -65,6 +65,7 @@ export LSCOLORS=bxgxdghxfxexaDEcGdcAcE
 export EDITOR='vim'
 export GIT_EDITOR='vim'
 export PATH=/usr/local/bin:$PATH
+
 ##########
 ########## aliases
 ##########
@@ -100,3 +101,12 @@ alias ll='ls -alF'
 # ⌘ ⌥ ⌦ ⌫ ↵ ↩ ⇧
 
 
+
+# {{{
+# Node Completion - Auto-generated, do not touch.
+shopt -s progcomp
+for f in $(command ls ~/.node-completion); do
+  f="$HOME/.node-completion/$f"
+  test -f "$f" && . "$f"
+done
+# }}}

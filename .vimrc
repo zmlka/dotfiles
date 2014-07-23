@@ -33,15 +33,15 @@ set backup          " keep a backup file
 
 "
 ""      <tab>ing        ""
-set tabstop=4       " number of spaces that a <tab> counts for
-set softtabstop=4   " backspace over two spaces deletes both
+set tabstop=2       " number of spaces that a <tab> counts for
+set softtabstop=2   " backspace over two spaces deletes both
 set expandtab       " inserts spaces whenever tab is pressed
 set shiftround      " round indent to multiple of shiftwidth
 
 "
 ""      indenting       ""
 set autoindent      " copy indent from the current line to  new line
-set shiftwidth=4    " number of spaces to use for each (auto) indent
+set shiftwidth=2    " number of spaces to use for each (auto) indent
 
 "
 ""      navigation      ""
@@ -217,7 +217,7 @@ nnoremap <F3> :GundoToggle<CR>
 "
 ""      vimwiki         ""
 
-let g:vimwiki_list = [{'path': '~/Sites/zmlka/', 'diary_rel_path':'_private/' , 'syntax': 'markdown', 'ext' : '.md', 'maxhi' : 0, 'diary_sort' : 'asc'}]
+let g:vimwiki_list = [{'path': '~/Dropbox/undisciplinary/', 'diary_rel_path':'_private/' , 'syntax': 'markdown', 'ext' : '.md', 'maxhi' : 0, 'diary_sort' : 'asc'}]
 let g:vimwiki_global_ext = 0        " make only files in the wiki path be
                                     " opened as wiki files
 " let g:vimwiki_folding = 1         " turn on folding
