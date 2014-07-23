@@ -87,7 +87,9 @@ set nowrap          " disable line wrapping for long lines
 set showcmd         " display an incomplete commands 
 set ruler           " always display the current cursor position 
 " set number          " show line numbers
-set relativenumber  " ruler numbers relative to currnent cursor position
+" set relativenumber  " ruler numbers relative to currnent cursor position
+"                       had to move this to gvim as Snow Leopard's vim does
+"                       not have the functionality
 
 "
 ""      status line     ""

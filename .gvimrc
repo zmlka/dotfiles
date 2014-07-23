@@ -38,6 +38,9 @@ colorscheme solarized
 """"""""""""""""""""""
 " automatically change to working directory. This throws errors if in .vimrc
 set autochdir       " automatially switch to working direcory
+set relativenumber  " ruler numbers relative to currnent cursor position
+
+
 
 " fullscreen mode, obviously makes no sense in .vimrc
 " https://wincent.com/wiki/MacVim_fullscreen_mode
