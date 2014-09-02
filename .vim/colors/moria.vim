@@ -38,11 +38,9 @@ if &background == "dark"
     if s:moria_style == "dark"
         hi Normal ctermbg=0 ctermfg=7 guibg=#202020 guifg=#d0d0d0 gui=none
 
-        " Line and Column colour changed from #404040 to #262626 (darker)
-        " -Martin Z (20.11.2010)
         hi ColorColumn ctermbg=8 ctermfg=15 guibg=#494949 gui=none
-        hi CursorColumn ctermbg=8 ctermfg=15 guibg=#262626 gui=none
-        hi CursorLine ctermbg=8 ctermfg=15 guibg=#262626 gui=none
+        hi CursorColumn ctermbg=8 ctermfg=15 guibg=#404040 gui=none
+        hi CursorLine ctermbg=8 ctermfg=15 guibg=#404040 gui=none
     elseif s:moria_style == "black"
         hi Normal ctermbg=0 ctermfg=7 guibg=#000000 guifg=#d0d0d0 gui=none
 

@@ -15,20 +15,9 @@ set columns=90      " default width
 set lines=90        " default height
 set cursorline      " highlight the current line
 
-"" Font             ""
-""""""""""""""""""""""
-" it's important to use a font that has a bold and italic typeface as vimwiki
-" takes advantage of the conceal feature in order to display italics and bold
-" dynamically.
-set guifont=TheSansMono:h12.0
-" set linespace=2
-
 "" Colorscheme      ""
 """"""""""""""""""""""
 
-" moria colorscheme, further instructions:
-" http://www.vim.org/scripts/script.php?script_id=1464
-set background=light
 colorscheme solarized
 
 
@@ -36,16 +25,16 @@ colorscheme solarized
 "   must be in
 ""  .gvimrc
 """"""""""""""""""""""
+
 " automatically change to working directory. This throws errors if in .vimrc
 set autochdir       " automatially switch to working direcory
 set relativenumber  " ruler numbers relative to currnent cursor position
 
-
-
 " fullscreen mode, obviously makes no sense in .vimrc
 " https://wincent.com/wiki/MacVim_fullscreen_mode
-" !!!! not needed. fullscreen now built in with lion
-" set fuopt+=maxhorz  " grow to max horizontal size in fulscreen
+set fuopt+=maxhorz  " grow to max horizontal size in fulscreen
+
+
 
 
 

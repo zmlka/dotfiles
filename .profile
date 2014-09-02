@@ -100,3 +100,4 @@ alias ll='ls -alF'
 # 〓 █████ ▇▇▇▆▅▅▄▃▂▁▀▗▖▘▙▚▛▜ ◹ ◺ ◸ ◿
 # ⌘ ⌥ ⌦ ⌫ ↵ ↩ ⇧
 
+if [ -e /Users/zmlka/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/zmlka/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

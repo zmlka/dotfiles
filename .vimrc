@@ -30,6 +30,7 @@ set autoread        " if file is changed externally, auto update
 ""      backing up      ""
 set backupdir=~/.backups
 set backup          " keep a backup file
+set noswapfile      " no swap file
 
 "
 ""      <tab>ing        ""
@@ -109,8 +110,6 @@ set ruler           " always display the current cursor position
 " set statusline+=%c\]    " column number
 
 "
-""      powerline       ""
-let g:Powerline_stl_path_style = "filename"
 
 set visualbell          " disbale audiable feedback
 
@@ -124,8 +123,6 @@ set listchars=trail:•,precedes:«,extends:»  " shows these unicode charachter
 "
 ""      colourful       ""
 
-set background=light
-" note to self: using solarized high contrast theme in iTerm
 syntax on       " syntax highlighting
 set hlsearch    " highlight search results
 set cursorline  " highlights current line
@@ -212,35 +209,21 @@ map <F7> :set spell! spell? spl=en_gb<CR>
 """"""""""""""""""""""""""
 
 "
-""      gundo           "
-" http://sjl.bitbucket.org/gundo.vim/
-nnoremap <F3> :GundoToggle<CR>
-
-"
 ""      vimwiki         ""
 
 let g:vimwiki_list = [{'path': '~/Dropbox/undisciplinary/', 'diary_rel_path':'_private/' , 'syntax': 'markdown', 'ext' : '.md', 'maxhi' : 0, 'diary_sort' : 'asc'}]
 let g:vimwiki_global_ext = 0        " make only files in the wiki path be
                                     " opened as wiki files
 " let g:vimwiki_folding = 1         " turn on folding
-
-
-""      indent guides   ""
-
-let g:indent_guides_enable_on_vim_startup = 1   " show indent guides by default
-let g:indent_guides_auto_colors = 1             " turn off default colours
-" autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd guibg=green ctermbg=green
-" leave odd one undefined, that way only every oter column will get
-" highlighted:
-" autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=black ctermbg=black
+"
 
 
 "
-""     AutoParis       ""
-
-" add typographic quotes to be paired
-let g:AutoPairs = {'(':')', '[':']', '{':'}'}
-
+""    limelight         ""
+autocmd User GoyoEnter Limelight
+autocmd User GoyoLeave Limelight!
+" auto activate limelight with goyo
 "
-""    powerline       ""
-let g:Powerline_colorscheme = 'solarized'
+"
+""    goyo              ""
+let g:goyo_width = 84
