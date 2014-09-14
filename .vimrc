@@ -22,7 +22,7 @@ set nocompatible
 
 filetype on         " turn on filetype specific features
 filetype indent on  " remembe rthat these have the power to overwrite many of
-filetype plugin on  " the below options (<tab>ing, indenting etc) 
+filetype plugin on  " the below options (<tab>ing, indenting etc)
 set history=70      " remember the last 70 commands and search patterns
 set autoread        " if file is changed externally, auto update
 
@@ -67,9 +67,6 @@ set clipboard=unnamed   " uses OS X clipboard
 " when reopening, jumps to last known position
 :au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 
-"
-""      omni complete   ""
-set completeopt=menuone,longest,preview
 
 """"""""""""""""""""""""""
 "
@@ -94,14 +91,13 @@ set ruler           " always display the current cursor position
 
 "
 ""      status line     ""
-" 
- set laststatus=2        " always display the status line
 "
-"" The below has been made obsolete by the powerline plugin
+set laststatus=2        " always display the status line
 " set statusline=
 " set statusline+=%t\     " file name (tail) of file in the buffer
 " set statusline+=%r\     " readonly flag, text is [RO]
 " set statusline+=%y\     " type of file in the buffer, e.g., [vim]
+" set statusline+=%{&fileencoding?&fileencoding:&encoding}
 " set statusline+=%m\     " modified flag, text is [+] 
 " set statusline+=%=\     " separation point between left/right
 " set statusline+=\[%{&fo}\]\     " displays formating options
@@ -109,7 +105,7 @@ set ruler           " always display the current cursor position
 " set statusline+=\[%l\,\ " line number
 " set statusline+=%c\]    " column number
 
-"
+
 
 set visualbell          " disbale audiable feedback
 
@@ -126,6 +122,7 @@ set listchars=trail:•,precedes:«,extends:»  " shows these unicode charachter
 syntax on       " syntax highlighting
 set hlsearch    " highlight search results
 set cursorline  " highlights current line
+set t_Co=256    " more colourful
 
 """"""""""""""""""""""""""
 "
@@ -223,7 +220,9 @@ let g:vimwiki_global_ext = 0        " make only files in the wiki path be
 autocmd User GoyoEnter Limelight
 autocmd User GoyoLeave Limelight!
 " auto activate limelight with goyo
-"
+
+
 "
 ""    goyo              ""
 let g:goyo_width = 84
+
