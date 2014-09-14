@@ -22,4 +22,10 @@ must be done manualy:
 git config --global core.excludesfile ~/.gitignore_global
 ```
 
+## Maintenance
 
+updating all vim plugins:
+
+```
+git submodule foreach git pull origin master
+```

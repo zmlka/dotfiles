@@ -23,7 +23,7 @@ PS1="┌─( \[\e[1;35m\]\u\[\e[0m\] ) - ( \w )\n└─⫸ "
 export LS_OPTIONS='--color=auto'
 export CLICOLOR=1
 export GREP_OPTIONS='--color=auto'
-# export TERM="xterm-256color"
+ export TERM="xterm-256color"
 
 ## changing colours:
 # export LSCOLORS=bxgxdghxfxexaDEcGdcAcE

@@ -93,17 +93,18 @@ set ruler           " always display the current cursor position
 ""      status line     ""
 "
 set laststatus=2        " always display the status line
-" set statusline=
-" set statusline+=%t\     " file name (tail) of file in the buffer
-" set statusline+=%r\     " readonly flag, text is [RO]
-" set statusline+=%y\     " type of file in the buffer, e.g., [vim]
-" set statusline+=%{&fileencoding?&fileencoding:&encoding}
-" set statusline+=%m\     " modified flag, text is [+] 
-" set statusline+=%=\     " separation point between left/right
-" set statusline+=\[%{&fo}\]\     " displays formating options
-" set statusline+=\(%P\)\ " window showing percentage through file
-" set statusline+=\[%l\,\ " line number
-" set statusline+=%c\]    " column number
+set statusline=
+set statusline+=%t\     " file name (tail) of file in the buffer
+set statusline+=%r\     " readonly flag, text is [RO]
+set statusline+=[%Y/    " type of file in the buffer, e.g., [vim]
+set statusline+=%{&fenc?&fenc:&encoding}/ " show file encoding
+set statusline+=%{&ff}]  "file format
+set statusline+=%m\     " modified flag, text is [+] 
+set statusline+=%=\     " separation point between left/right
+set statusline+=\[%{&fo}\]\     " displays formating options
+set statusline+=\(%P\)\ " window showing percentage through file
+set statusline+=\[%l\,\ " line number
+set statusline+=%c\]    " column number
 
 
 
@@ -137,19 +138,6 @@ set t_Co=256    " more colourful
 ""      markdown        ""
 au BufRead,BufNewFile *.md set filetype=markdown
 " use .md extension for 'normal' markdown files
-
-"
-""      LaTeX           ""
-au BufRead,BufNewFile *.tex let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
-" omni completion
-
-
-"
-""      VimWiki""
-au BufRead,BufNewFile *.vimwiki let g:SuperTabDefaultCompletionType = "<C-X><C-I>"
-au BufRead,BufNewFile *.markdown let g:SuperTabDefaultCompletionType = "<C-X><C-I"
-" .markdown is used for vimwiki markdown files. Completion based on words in
-" current document
 
 """"""""""""""""""""""""""
 "
