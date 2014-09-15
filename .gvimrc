@@ -28,24 +28,6 @@ endif
 "" Colorscheme      ""
 """"""""""""""""""""""
 
-colorscheme solarized
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
