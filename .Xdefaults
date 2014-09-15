@@ -4,7 +4,7 @@ URxvt*boldFont: xft: Meslo LG M:bold:size=8:antialias=true
 URxvt.letterSpace:-1
 
 !! UI
-URxvt*scrollBar false
+URxvt*scrollBar: false
 
 !! source: https://github.com/spazzpp2/dotfiles/blob/29819a5ac5e451bfa39bc324378aa508ef75cae8/Molokai.xrdb
 !
