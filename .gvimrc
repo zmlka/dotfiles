@@ -27,7 +27,7 @@ endif
 "
 "" Colorscheme      ""
 """"""""""""""""""""""
-
+colorscheme molokai
 
 
 
