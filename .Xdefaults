@@ -1,22 +1,22 @@
 URxvt*font: xft: Meslo LG M:regular:size=8:antialias=true
 URxvt*boldFont: xft: Meslo LG M:bold:size=8:antialias=true
-URxvt*letterSpace:-1
-urxvt.background: #000000
-urxvt.foreground: #D3D2D3
-urxvt.color0: #000000
-urxvt.color1: #FF7768
-urxvt.color2: #ABFA68
-urxvt.color3: #FFFD88
-urxvt.color4: #98D0FE
-urxvt.color5: #FF85FD
-urxvt.color6: #CACBFE
-urxvt.color7: #EFEFEF
-urxvt.color8: #848484
-urxvt.color9: #FFBCB5
-urxvt.color10: #D1FCB1
-urxvt.color11: #FFFDD0
-urxvt.color12: #BADFFF
-urxvt.color13: #FFA9FE
-urxvt.color14: #E2E3FE
-urxvt.color15: #FFFFFF
-urxvt.scrollBar: false
+URxvt.letterSpace:-1
+URxvt*background: #000000
+URxvt*foreground: #D3D2D3
+URxvt*color0: #000000
+URxvt*color1: #FF7768
+URxvt*color2: #ABFA68
+URxvt*color3: #FFFD88
+URxvt*color4: #98D0FE
+URxvt*color5: #FF85FD
+URxvt*color6: #CACBFE
+URxvt*color7: #EFEFEF
+URxvt*color8: #848484
+URxvt*color9: #FFBCB5
+URxvt*color10: #D1FCB1
+URxvt*color11: #FFFDD0
+URxvt*color12: #BADFFF
+URxvt*color13: #FFA9FE
+URxvt*color14: #E2E3FE
+URxvt*color15: #FFFFFF
+URxvt*scrollBar: false
