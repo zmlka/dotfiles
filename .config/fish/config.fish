@@ -10,6 +10,9 @@ set -gx EDITOR vim
 set -gx EDITOR vim
 set -gx GIT_EDITOR vim
 
+# PATH
+
+set -gx PATH ~/bin
 
 if mac
   alias vim /Applications/MacVim.app/Contents/MacOS/Vim
