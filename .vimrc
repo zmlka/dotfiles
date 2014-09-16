@@ -126,6 +126,22 @@ set hlsearch    " highlight search results
 set cursorline  " highlights current line
 set t_Co=256    " more colourful
 
+
+"
+""    spelling          ""
+" make terminal vim change the colour of words, not highlight them so as to be
+" illegible
+" for underline, add cterm=underline
+
+highlight clear SpellBad
+highlight SpellBad ctermfg=LightRed
+highlight clear SpellCap
+highlight SpellCap ctermfg=Red
+highlight clear SpellRare
+highlight SpellRare ctermfg=Red
+highlight clear SpellLocal
+highlight SpellLocal ctermfg=Red
+
 """"""""""""""""""""""""""
 "
 "" filetype specific    ""
@@ -215,3 +231,5 @@ autocmd User GoyoLeave Limelight!
 ""    goyo              ""
 let g:goyo_width = 84
 
+
+highligh SpellBad ctermfg=red

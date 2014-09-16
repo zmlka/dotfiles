@@ -22,6 +22,7 @@ if has ('mac')
   set fuopt+=maxhorz "https://wincent.com/wiki/MacVim_fullscreen_mode
 elseif has ('unix')
   set lines=50      " default height
+  set guifont=Meslo\ LG\ M:h10
 endif
 
 "
