@@ -5,7 +5,7 @@ Clone the repository into the home directory
 ```
 cd ~
 git init
-git remote add origin https://github.com/zmlka/dotfiles.git
+git remote add origin git@github.com:zmlka/dotfiles.git
 git pull origin master
 ```
 
