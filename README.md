@@ -16,17 +16,16 @@ must be done manualy:
 git config --global core.excludesfile ~/.gitignore_global
 ```
 
-### vim
-
-```
-mkdir ~/.backups
-```
-
-Update the git submodules (git submodules are used for vim plugins)
+Update the git submodules (eg: git submodules are used for vim plugins)
 
 ```
 git submodule init
 git submodule update
+```
+### vim
+
+```
+mkdir ~/.backups
 ```
 
 
@@ -55,8 +54,20 @@ sudo apt-get install fontconfig-infinality
 
 ## Maintenance
 
-updating all vim plugins:
+add a new submodule:
+
+```
+git submodule add git@github.com:SOME_USER/SOME_REPO.git OPTIONAL/DESTINATION
+```
+
+update all submodules:
 
 ```
 git submodule foreach git pull origin master
+```
+
+update font cache
+
+```
+fc-cache -f -v
 ```

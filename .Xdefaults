@@ -35,26 +35,33 @@ URxvt*cursorBlink: 1
 ! URxvt*color14: #4eb4fa
 ! URxvt*color15: #d0d0d0
 
+!! X Poppy
+!sourceL http://dotshare.it/dots/548/
+*background: #f0f0f0
+*foreground: #181512
+*cursorColor: #181512
 
-!! Dark and pastel colours
-!source: http://pastebin.com/6JM2PYVc (superCJ on reddit)
-*color0: #000000
-*color8: #555753
-*color1: #BF4040
-*color9: #EF4040
-*color2: #95CB29
-*color10: #A6E22E
-*color3: #888A85
-*color11: #555753
-*color4: #36AF90
-*color12: #66D9EE
-*color5: #E02266
-*color13: #F92672
-*color6: #36AF90
-*color14: #66EFD5
-*color7: #555753
-*color15: #D3D7CF
-*background: #2A2A2A
-*foreground: #888A85
- 
- 
+!black
+*color0:     #373737
+*color8:     #474747
+!red (red)
+*color1:     #CC4141
+*color9:     #BA2929
+!green (green)
+*color2:     #43803D
+*color10:    #2F632A
+!yellow (blue)
+*color3:     #7882BF
+*color11:    #596196
+!blue (brown)
+*color4:     #DBAB3B
+*color12:    #C79520
+!magenta (magenta)
+*color5:     #BF849C
+*color13:    #B06A86
+!cyan (light blue)
+*color6:     #6AA9B0
+*color14:    #4D8B91
+!white (pink)
+*color7:     #E39036
+*color15:    #C97820
