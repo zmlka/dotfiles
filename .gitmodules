@@ -8,3 +8,6 @@
 	path = .vim/bundle/limelight.vim
 	url = https://github.com/junegunn/limelight.vim.git
 [submodule ".vim/bundle/vim-airline"]
+[submodule ".fonts"]
+	path = .fonts
+	url = git@github.com:lokaltog/powerline-fonts.git
