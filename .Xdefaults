@@ -1,7 +1,14 @@
 !! Typography
-URxvt*font: xft: Meslo LG M:regular:size=8:antialias=true
-URxvt*boldFont: xft: Meslo LG M:bold:size=8:antialias=true
+URxvt*font: xft:Terminess Powerline:size=8
 URxvt.letterSpace:-1
+Xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: false
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+
 
 !! UI
 URxvt*scrollBar: false
@@ -9,22 +16,45 @@ URxvt*cursorBlink: 1
 
 !! Molokai theme
 !source: https://gist.github.com/vreon/845878
-URxvt*background: #101010
-URxvt*foreground: #d0d0d0
-URxvt*color0: #101010
-URxvt*color1: #960050
-URxvt*color2: #66aa11
-URxvt*color3: #c47f2c
-URxvt*color4: #30309b
-URxvt*color5: #7e40a5
-URxvt*color6: #3579a8
-URxvt*color7: #9999aa
-URxvt*color8: #303030
-URxvt*color9: #ff0090
-URxvt*color10: #80ff00
-URxvt*color11: #ffba68
-URxvt*color12: #5f5fee
-URxvt*color13: #bb88dd
-URxvt*color14: #4eb4fa
-URxvt*color15: #d0d0d0
+! URxvt*background: #101010
+! URxvt*foreground: #d0d0d0
+! URxvt*color0: #101010
+! URxvt*color1: #960050
+! URxvt*color2: #66aa11
+! URxvt*color3: #c47f2c
+! URxvt*color4: #30309b
+! URxvt*color5: #7e40a5
+! URxvt*color6: #3579a8
+! URxvt*color7: #9999aa
+! URxvt*color8: #303030
+! URxvt*color9: #ff0090
+! URxvt*color10: #80ff00
+! URxvt*color11: #ffba68
+! URxvt*color12: #5f5fee
+! URxvt*color13: #bb88dd
+! URxvt*color14: #4eb4fa
+! URxvt*color15: #d0d0d0
 
+
+!! Dark and pastel colours
+!source: http://pastebin.com/6JM2PYVc (superCJ on reddit)
+*color0: #000000
+*color8: #555753
+*color1: #BF4040
+*color9: #EF4040
+*color2: #95CB29
+*color10: #A6E22E
+*color3: #888A85
+*color11: #555753
+*color4: #36AF90
+*color12: #66D9EE
+*color5: #E02266
+*color13: #F92672
+*color6: #36AF90
+*color14: #66EFD5
+*color7: #555753
+*color15: #D3D7CF
+*background: #2A2A2A
+*foreground: #888A85
+ 
+ 
