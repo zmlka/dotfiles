@@ -28,7 +28,7 @@ endif
 "
 "" Colorscheme      ""
 """"""""""""""""""""""
-colorscheme smyk
+colorscheme smyck
 
 
 
