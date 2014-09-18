@@ -28,7 +28,7 @@ endif
 "
 "" Colorscheme      ""
 """"""""""""""""""""""
-colorscheme molokai
+colorscheme smyk
 
 
 
