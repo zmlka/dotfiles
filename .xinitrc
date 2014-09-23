@@ -14,6 +14,8 @@ fi
 # terminal called by i3-sensible-terminal
 export TERMINAL=termite
 
+# set the background
+sh ~/.fehbg &
 
 # start the wm
 exec i3
