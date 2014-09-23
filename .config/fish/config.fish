@@ -5,7 +5,7 @@
 function mac ; test (uname -s) = "Darwin" ; end
 function linux ; test (uname -s) = "Linux" ; end
 
-# Set the default editor to vim
+# environment variables
 set -gx EDITOR vim
 set -gx EDITOR vim
 set -gx GIT_EDITOR vim

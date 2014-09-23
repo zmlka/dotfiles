@@ -40,6 +40,9 @@ chsh -s /usr/bin/fish
 
 Single user fonts are stored in `~/.local/share/fonts`
 
+Install infinality as per the [arch
+wiki](https://wiki.archlinux.org/index.php/Infinality-bundle+fonts)
+
 
 ## Maintenance
 
