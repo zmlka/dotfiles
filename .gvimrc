@@ -11,8 +11,7 @@
 set guioptions=c
 "              c: don't pop up windows, use the console instead
 "                e: use tab bar instead of text tab bar!
-set columns=85      " default width
-set lines=90        " default height
+set columns=86      " default width
 set cursorline      " highlight the current line
 set relativenumber  " ruler numbers relative to currnent cursor position
 set autochdir       " automatially switch to working direcory
