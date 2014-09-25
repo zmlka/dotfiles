@@ -1,3 +1,7 @@
+#
+# https://github.com/zmlka
+# termite terminal emulator settigns
+
 [options]
 resize_grip = false
 scroll_on_output = false
@@ -8,7 +12,7 @@ allow_bold = true
 dynamic_title = true
 urgent_on_bell = true
 clickable_url = true
-font = Monospace 9
+font = Ubuntu Mono derivative Powerline 11
 scrollback_lines = 1000
 search_wrap = true
 #icon_name = terminal
@@ -21,7 +25,7 @@ cursor_blink = system
 cursor_shape = block
 
 # $BROWSER is used by default
-#browser = firefox
+browser = dwb
 
 # set size hints for the window
 #size_hints = false
@@ -30,31 +34,29 @@ cursor_shape = block
 #modify_other_keys = false
 
 [colors]
-foreground = #dcdccc
-foreground_bold = #ffffff
-background = #3f3f3f
-#cursor = #dcdccc
+# Own dark colour scheme
 
-# if unset, will reverse foreground and background
-highlight = #2f2f2f
-
-# colors from color0 to color254 can be set
-color0 = #3f3f3f
-color1 = #705050
-color2 = #60b48a
-color3 = #dfaf8f
-color4 = #506070
-color5 = #dc8cc3
-color6 = #8cd0d3
-color7 = #dcdccc
-color8 = #709080
-color9 = #dca3a3
-color10 = #c3bf9f
-color11 = #f0dfaf
-color12 = #94bff3
-color13 = #ec93d3
-color14 = #93e0e3
-color15 = #ffffff
+foreground= #d9e6f2
+foreground_bold=  #ffffff
+background= #0c1c27
+highlight=  #2f2f2f
+cursor=     #878675
+color0=     #000000
+color8=     #262626
+color1=     #d48e7d
+color9=     #e6bdb3
+color2=     #7dd48e
+color10=    #b3e6bd
+color3=     #c2d47d
+color11=    #dbe6b3
+color4=     #8e7dd4
+color12=    #bdb3e6
+color5=     #d47dc2
+color13=    #e6b3db
+color6=     #7dc2d4
+color14=    #b3dbe6
+color7=     #d7d7d7
+color15=    #ffffff
 
 [hints]
 #font = Monospace 12
@@ -67,4 +69,4 @@ color15 = #ffffff
 #border_width = 0.5
 #roundness = 2.0
 
-# vim: ft=dosini cms=#%s
+# vim: ft=dosini

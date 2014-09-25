@@ -1,6 +1,5 @@
 "
 " www.github.com/zmlka
-" .gvimrc to be used with MacVim
 "
 " sourced from  github and my needs.
 " vim documentation: http://vimdoc.sourceforge.net
@@ -21,6 +20,7 @@ if has ('mac')
   set fuopt+=maxhorz "https://wincent.com/wiki/MacVim_fullscreen_mode
 elseif has ('unix')
   set lines=50      " default height
+  set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 11
 endif
 
 "

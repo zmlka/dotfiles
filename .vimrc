@@ -1,6 +1,5 @@
 "
 " www.github.com/zmlka
-" my .vimrc to be used with MacVim
 "
 " sourced from  github and my needs.
 " vim documentation: http://vimdoc.sourceforge.net
@@ -191,8 +190,8 @@ imap <C-p> <Esc>:tabprevious<cr>i
 ""      insert time     "
 " http://vim.wikia.com/wiki/VimTip97
 " check manpage of strftime for an expanation of the notation
-nmap <F2> a<C-R>=strftime("%a %d.%m.%Y %H:%M %Z")<CR><Esc>
-imap <F2> <C-R>=strftime("%a %d.%m.%Y %H:%M %Z")<CR>
+" nmap <F2> a<C-R>=strftime("%a %d.%m.%Y %H:%M %Z")<CR><Esc>
+" imap <F2> <C-R>=strftime("%a %d.%m.%Y %H:%M %Z")<CR>
 
 
 ""      open currnet folder with default program

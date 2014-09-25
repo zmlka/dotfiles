@@ -2,3 +2,5 @@ info
 .netrwhist
 fish_history
 fishd.*
+.config/dwb/default
+.config/pulse
