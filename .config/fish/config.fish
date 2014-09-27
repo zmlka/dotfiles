@@ -14,6 +14,7 @@ set -gx GIT_EDITOR vim
 
 if mac
   alias vim /Applications/MacVim.app/Contents/MacOS/Vim
+  alias emacs /Applications/Emacs.app/Contents/MacOS/Emacs
 else
 end
 
