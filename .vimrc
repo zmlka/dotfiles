@@ -160,15 +160,6 @@ au BufRead,BufNewFile *.md set filetype=markdown
 "" key remapings        ""
 """"""""""""""""""""""""""
 
-""      easier key navigation
-
-nnoremap J 10j
-vnoremap J 10j
-nnoremap K 10k
-vnoremap K 10k
-" Capital letter jumps 10x as much
-" if you need to use Join just use :join
-
 
 ""      split navigation
 map <C-k> <C-w><Up>
