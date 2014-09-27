@@ -17,7 +17,7 @@
 
 ;; save backup files somewhere else
 (setq backup-by-copying t)
-(setq backup-directory-alist (("." . "~/.backups")))
+(setq backup-directory-alist '(("." . "~/.backups")))
 
 
 ;; UI
