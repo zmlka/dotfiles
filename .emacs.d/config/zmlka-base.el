@@ -16,9 +16,23 @@
 (setq create-lockfiles nil)
 
 ;; save backup files somewhere else
-(setq backup-by-copying t)
-(setq backup-directory-alist '(("." . "~/.backups")))
+;; http://www.emacswiki.org/emacs/BackupDirectory
+(setq
+   backup-by-copying t
+   backup-directory-alist
+    '(("." . "~/.saves"))
+   auto-save-file-name-transforms
+   `((".*" ,temporary-file-directory t))
+   delete-old-versions t
+   kept-new-versions 6
+   kept-old-versions 2
+   version-control t)
 
+;; case insensitive search
+(setq case-fold-search nil)
+
+;; case insensitive file search
+(setq pcomplete-ignore-case t)
 
 ;; UI
 ;; --------------------------------------------------------------------
@@ -62,12 +76,27 @@
 ;; smartparens evreywhere
 (smartparens-global-mode 1)
 
-;; AUCTeX
-(setq-default TeX-engine 'xetex)
-(setq-default TeX-PDF-mode t)
-(setq-default TeX-source-correlate-mode t)
-(load "auctex.el" nil t t)
-(load "preview-latex.el" nil t t)
+;; AUCTeX - only used on linux so far
+(if (eq system-type 'gnu/linux)
+  (progn
+    (setq-default TeX-engine 'xetex)
+    (setq-default TeX-PDF-mode t)
+    (setq-default TeX-source-correlate-mode t)
+    (load "auctex.el" nil t t)
+    (load "preview-latex.el" nil t t)))
+
+;; Auto-complete
+(ac-config-default)
+
+;; Latex autocomplete
+(add-to-list 'ac-modes 'latex-mode) 
+(setq ac-math-unicode-in-math-p t)
+(defun ac-latex-mode-setup ()         ; add ac-sources to default ac-sources
+  (setq ac-sources
+     (append '(ac-source-math-unicode ac-source-math-latex ac-source-latex-commands)
+               ac-sources)))
+
+(add-hook 'latex-mode-hook 'ac-latex-mode-setup)
 
 ;; the end
 ;; --------------------------------------------------------------------

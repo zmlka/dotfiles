@@ -1,5 +1,5 @@
-;;
-;; https://github.com/zmlka
+jjjjjjjjjj;;
+;; HTTPSu://GITHUBuuuukkk.com/zmlka
 ;; emacs - init file
 ;; ====================================================================
 ;; ====================================================================
@@ -13,7 +13,6 @@
 ;; --------------------------------------------------------------------
 (setq package-archives '(("marmalade" . "http://marmalade-repo.org/packages/")
                          ("melpa-stable" . "http://melpa-stable.milkbox.net/packages/")
-                         ("melpa" . "http://melpa.milkbox.net/packages/")
                          ("org" . "http://orgmode.org/elpa/")
                          ("gnu" . "http://elpa.gnu.org/packages/")))
 (require 'package)
@@ -23,8 +22,6 @@
 ;;
 ;; load customisations
 ;; --------------------------------------------------------------------
-(require 'auto-complete-config)
-(require 'ac-math)
 (require 'saveplace)
 (require 'smartparens-config)
 (require 'rainbow-delimiters)
