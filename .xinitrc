@@ -17,8 +17,12 @@ export TERMINAL=termite
 # set the background
 sh ~/.fehbg &
 
-# set mac keyboard layout
+# disable touchpad while typing
+# from the arch linux wiki touchpad synaptics page
 
+syndaemon -t -k -i 2 &
+
+# set mac keyboard layout
 setxkbmap -layout us -variant mac
 
 # start the wm

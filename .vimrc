@@ -220,6 +220,3 @@ autocmd User GoyoLeave Limelight!
 "
 ""    goyo              ""
 let g:goyo_width = 84
-
-
-highligh SpellBad ctermfg=red

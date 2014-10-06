@@ -77,13 +77,11 @@
 (smartparens-global-mode 1)
 
 ;; AUCTeX - only used on linux so far
-(if (eq system-type 'gnu/linux)
-  (progn
     (setq-default TeX-engine 'xetex)
     (setq-default TeX-PDF-mode t)
     (setq-default TeX-source-correlate-mode t)
     (load "auctex.el" nil t t)
-    (load "preview-latex.el" nil t t)))
+    (load "preview-latex.el" nil t t)
 
 ;; Auto-complete
 (ac-config-default)
