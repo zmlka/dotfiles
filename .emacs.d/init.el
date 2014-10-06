@@ -27,5 +27,6 @@
 (require 'rainbow-delimiters)
 (require 'clojure-mode)
 (require 'cider)
+(require 'zmlka-markdown)
 (require 'zmlka-base)
 (require 'zmlka-evil)

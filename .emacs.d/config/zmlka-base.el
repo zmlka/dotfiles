@@ -26,7 +26,7 @@
 ;; default window size
 (setq default-frame-alist
       '((width . 86)
-        (height . 52)))
+        (height . 60)))
 
 ;; hide toolbars
 (tool-bar-mode -1)
@@ -61,6 +61,7 @@
 
 ;; smartparens evreywhere
 (smartparens-global-mode 1)
+
 
 ;; the end
 ;; --------------------------------------------------------------------
