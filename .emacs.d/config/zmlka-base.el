@@ -62,6 +62,9 @@
 ;; smartparens evreywhere
 (smartparens-global-mode 1)
 
+;; activate AUCTeX
+(load "auctex.el" nil t t)
+(load "preview-latex.el" nil t t)
 
 ;; the end
 ;; --------------------------------------------------------------------
