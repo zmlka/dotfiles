@@ -10,6 +10,14 @@ set -gx EDITOR vim
 set -gx EDITOR vim
 set -gx GIT_EDITOR vim
 
+# quickly switch layouts in linux
+
+if linux
+  alias cz "setxkbmap -layout cz -variant qwerty"
+  alias us "setxkbmap -layout us -variant mac"
+else
+end
+
 # PATH
 
 if mac

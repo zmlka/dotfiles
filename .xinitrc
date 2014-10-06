@@ -17,5 +17,9 @@ export TERMINAL=termite
 # set the background
 sh ~/.fehbg &
 
+# set mac keyboard layout
+
+setxkbmap -layout us -variant mac
+
 # start the wm
 exec i3
