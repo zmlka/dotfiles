@@ -178,6 +178,7 @@ map <C-p> :tabprevious<cr>
 imap <C-n> <Esc>:tabnext<cr>i
 imap <C-p> <Esc>:tabprevious<cr>i
 
+
 ""      insert time     "
 " http://vim.wikia.com/wiki/VimTip97
 " check manpage of strftime for an expanation of the notation
@@ -191,8 +192,7 @@ map <F8> :!open "%"<CR><CR>
 
 
 ""      toggle spell    "
-map <F7> :set spell! spell? spl=en_gb<CR>
-
+map <F7> :set spell! spell? spl=en_gb,cs<CR>
 
 
 """"""""""""""""""""""""""
@@ -219,7 +219,7 @@ autocmd User GoyoLeave Limelight!
 
 "
 ""    goyo              ""
-let g:goyo_width = 84
+let g:goyo_width = 85
 
 
 

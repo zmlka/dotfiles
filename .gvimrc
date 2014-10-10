@@ -10,7 +10,7 @@
 set guioptions=c
 "              c: don't pop up windows, use the console instead
 "                e: use tab bar instead of text tab bar!
-set columns=86      " default width
+set columns=88      " default width
 set cursorline      " highlight the current line
 set relativenumber  " ruler numbers relative to currnent cursor position
 set autochdir       " automatially switch to working direcory
@@ -20,7 +20,7 @@ if has ('mac')
   set fuopt+=maxhorz "https://wincent.com/wiki/MacVim_fullscreen_mode
 elseif has ('unix')
   set lines=50      " default height
-  set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 11
+""  set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 11
 endif
 
 "
