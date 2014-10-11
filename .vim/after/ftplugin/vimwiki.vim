@@ -14,6 +14,8 @@ setlocal spelllang=en_gb,cs
 setlocal tw=79 " textwidth
 setlocal expandtab " inserts spaces whenever tab is pressed
 setlocal shiftround " round indent to multiple of shiftwidth
+setlocal norelativenumber
+setlocal nonumber
 " setlocal formatprg=par "use par to format paragraphs
 " the above causes bullet points to not format properly
 
