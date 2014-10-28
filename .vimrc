@@ -9,7 +9,7 @@
 "
 ""      pathogen        ""
 """"""""""""""""""""""""""
-call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
 
 " vi improved please:
 set nocompatible
@@ -233,6 +233,7 @@ let g:neocomplcache_enable_at_startup = 1
 let g:neocomplcache_enable_smart_case = 1
 " Set minimum syntax keyword length.
 let g:neocomplcache_min_syntax_length = 3
+let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
 " <TAB>: completion.
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 " <C-h>, <BS>: close popup and delete backword char.
