@@ -219,7 +219,7 @@ autocmd User GoyoLeave Limelight!
 
 "
 ""    goyo              ""
-let g:goyo_width = 85
+let g:goyo_width = 90
 
 
 
@@ -228,7 +228,7 @@ let g:goyo_width = 85
 ""    at some point, upgrade to the lua version
 
 " Use neocomplcache.
-let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_enable_at_startup = 0
 " Use smartcase.
 let g:neocomplcache_enable_smart_case = 1
 " Set minimum syntax keyword length.

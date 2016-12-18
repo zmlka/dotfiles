@@ -1,0 +1,10 @@
+"
+" www.github.com/zmlka
+"
+" vimperator documentation: liberator://help/options
+"
+
+
+set gui=none,tabs
+set tabnumbers=true
+

@@ -19,16 +19,13 @@ set autochdir       " automatially switch to working direcory
 if has ('mac')
   set lines=90      "default height
   set fuopt+=maxhorz "https://wincent.com/wiki/MacVim_fullscreen_mode
+  set background=light
+  colorscheme default
 elseif has ('unix')
   set lines=50      " default height
   set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
   set mousemodel=popup " allow right click menus
+  colorscheme smycka
 endif
-
-"
-"" Colorscheme      ""
-""""""""""""""""""""""
-colorscheme smyck
-
 
 
