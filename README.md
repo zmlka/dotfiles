@@ -52,6 +52,7 @@ add a new submodule:
 ```
 git submodule add git@github.com:SOME_USER/SOME_REPO.git OPTIONAL/DESTINATION
 ```
+for example `git submodule add git@github.com:Shougo/neocomplcache.vim.git .vim/bundle/neocomplcache`
 
 update all submodules:
 
