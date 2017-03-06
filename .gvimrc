@@ -16,11 +16,13 @@ set relativenumber  " ruler numbers relative to currnent cursor position
 set number          " shows the actual number for the current line
 set autochdir       " automatially switch to working direcory
 
-if has ('mac')
-  set lines=90      "default height
+if has ("mac")
+  set lines=80      "default height
   set fuopt+=maxhorz "https://wincent.com/wiki/MacVim_fullscreen_mode
-  set background=light
+  set guifont=Fira\ Code:h14
+  set linespace=2
   colorscheme default
+  set background=light
 elseif has ('unix')
   set lines=50      " default height
   set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
