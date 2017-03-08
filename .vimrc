@@ -169,8 +169,8 @@ map <C-h> <C-w><Left>
 
 ""      folds           "
 nnoremap <space> za " use spaace to toggle folds
-nnoremap <F4> zR " use F4 to open all folds
-nnoremap <F5> zM " use F5 to close all folds
+"nnoremap <F4> zR " use F4 to open all folds
+"nnoremap <F5> zM " use F5 to close all folds
 
 ""      tab navigation  "
 map <C-n> :tabnext<cr>
@@ -184,11 +184,6 @@ imap <C-p> <Esc>:tabprevious<cr>i
 " check manpage of strftime for an expanation of the notation
 " nmap <F2> a<C-R>=strftime("%a %d.%m.%Y %H:%M %Z")<CR><Esc>
 " imap <F2> <C-R>=strftime("%a %d.%m.%Y %H:%M %Z")<CR>
-
-
-""      open currnet folder with default program
-map <F8> :!open "%"<CR><CR>
-" make sure that Marked is the default for .md files
 
 
 ""      toggle spell    "
@@ -220,27 +215,3 @@ autocmd User GoyoLeave Limelight!
 "
 ""    goyo              ""
 let g:goyo_width = 90
-
-
-
-"
-""    neocomplcache     ""
-""    at some point, upgrade to the lua version
-
-" Use neocomplcache.
-let g:neocomplcache_enable_at_startup = 0
-" Use smartcase.
-let g:neocomplcache_enable_smart_case = 1
-" Set minimum syntax keyword length.
-let g:neocomplcache_min_syntax_length = 3
-let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
-" <TAB>: completion.
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-" <C-h>, <BS>: close popup and delete backword char.
-inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
-inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
-inoremap <expr><C-y>  neocomplcache#close_popup()
-inoremap <expr><C-e>  neocomplcache#cancel_popup()
-" Enable omni completion.
-autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
