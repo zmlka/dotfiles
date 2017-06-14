@@ -36,15 +36,6 @@ Set fish as the default shell:
 chsh -s /usr/bin/fish
 ```
 
-### Fonts
-
-Single user fonts are stored in `~/.local/share/fonts`
-
-Install infinality as per the [arch
-wiki](https://wiki.archlinux.org/index.php/Infinality-bundle+fonts). I use the
-defaults.
-
-
 ## Maintenance
 
 add a new submodule:
@@ -58,10 +49,4 @@ update all submodules:
 
 ```
 git submodule foreach git pull origin master
-```
-
-update font cache
-
-```
-fc-cache -f -v
 ```

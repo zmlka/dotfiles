@@ -13,3 +13,6 @@
 [submodule ".vim/bundle/neocomplcache"]
 	path = .vim/bundle/neocomplcache
 	url = git@github.com:Shougo/neocomplcache.vim.git
+[submodule ".vim/bundle/elm-vim"]
+	path = .vim/bundle/elm-vim
+	url = git@github.com:ElmCast/elm-vim.git

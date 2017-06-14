@@ -12,7 +12,7 @@ set guioptions=c
 "                e: use tab bar instead of text tab bar!
 set columns=88      " default width
 set cursorline      " highlight the current line
-set relativenumber  " ruler numbers relative to currnent cursor position
+"set relativenumber  " ruler numbers relative to currnent cursor position
 set number          " shows the actual number for the current line
 set autochdir       " automatially switch to working direcory
 
@@ -24,8 +24,8 @@ if has ("mac")
   colorscheme default
   set background=light
 elseif has ('unix')
-  set lines=50      " default height
-  set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
+  set lines=80      " default height
+  set guifont=Fira\ Code:h14
   set mousemodel=popup " allow right click menus
   colorscheme smycka
 endif
