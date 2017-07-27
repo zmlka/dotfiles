@@ -35,6 +35,8 @@ Set fish as the default shell:
 ```
 chsh -s /usr/bin/fish
 ```
+In GNOME Terminal, go to Profile Preferences -> Command -> Run a custom command
+instead of my shell: `/usr/bin/fish`
 
 ## Maintenance
 
