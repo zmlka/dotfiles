@@ -38,6 +38,29 @@ chsh -s /usr/bin/fish
 In GNOME Terminal, go to Profile Preferences -> Command -> Run a custom command
 instead of my shell: `/usr/bin/fish`
 
+### Swapping Escape and tilde
+
+Since `xmodmap` was somewhat depreciated (it still works in some applications,
+but not all. I suspect this is related to GNOME 3 defaulting to Wayland), this
+became quite a pain.
+
+The absolutely easiest, but somewhat un-unixy way of doing it I came to is to
+edit xkb files of my preferred keyboard layout (un-unixy because I am
+hard-editing default files, instead of creating my on config somewhere in
+`$HOME`).
+
+```
+cd /usr/share/X11/xkb/symbols
+sudo cp us us.backup
+sudo vim us
+```
+Once there, edit the `"mac"` layout:
+
+```
+key <TLDE> { [     Escape                                             ] };
+key <ESC>  { [     grave, asciitilde,    dead_grave,        dead_horn ] };
+```
+
 ## Maintenance
 
 add a new submodule:
