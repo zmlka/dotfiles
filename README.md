@@ -41,20 +41,18 @@ instead of my shell: `/usr/bin/fish`
 ### Swapping Escape and tilde
 
 Since `xmodmap` was somewhat depreciated (it still works in some applications,
-but not all. I suspect this is related to GNOME 3 defaulting to Wayland), this
-became quite a pain.
+but not all. I suspect this is related to GNOME 3 defaulting to Wayland),
+swapping keys got oddly complex.
 
 The absolutely easiest, but somewhat un-unixy way of doing it I came to is to
-edit xkb files of my preferred keyboard layout (un-unixy because I am
-hard-editing default files, instead of creating my on config somewhere in
-`$HOME`).
+hard edit xkb files of an existing layout.
 
 ```
 cd /usr/share/X11/xkb/symbols
 sudo cp us us.backup
 sudo vim us
 ```
-Once there, edit the `"mac"` layout:
+Once there, edit the layout in use, usually `"mac"`:
 
 ```
 key <TLDE> { [     Escape                                             ] };
