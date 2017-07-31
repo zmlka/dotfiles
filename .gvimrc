@@ -24,7 +24,6 @@ if has ("mac")
   colorscheme default
   set background=light
 elseif has ('unix')
-  set guioptions=+m
   set lines=72      " default height
   set guifont=Fira\ Code\ 12
   set mousemodel=popup " allow right click menus
