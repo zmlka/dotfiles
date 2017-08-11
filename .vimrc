@@ -141,6 +141,17 @@ highlight SpellRare ctermfg=Red
 highlight clear SpellLocal
 highlight SpellLocal ctermfg=Red
 
+
+"
+""    file explorer   ""
+" customisations for netrw, see https://shapeshed.com/vim-netrw/
+
+let g:netrw_browse_split = 3  " open new files in a new tab
+let g:netrw_liststyle = 3     " expanding/collapsing file view
+
+
+
+
 """"""""""""""""""""""""""
 "
 "" filetype specific    ""
