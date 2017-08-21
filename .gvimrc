@@ -11,7 +11,7 @@ set guioptions=ce
                       " c: don't pop up windows, use the console instead
                       " e: use tab bar instead of text tab bar!
 set columns=88        " default width
-set lines = 72        " default height
+set lines=72          " default height
 set cursorline        " highlight the current line
 set linespace=1       " increase line spacing
 "set relativenumber   " ruler numbers relative to currnent cursor position
