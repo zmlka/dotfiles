@@ -10,7 +10,7 @@
 set guioptions=ce
                       " c: don't pop up windows, use the console instead
                       " e: use tab bar instead of text tab bar!
-set columns=88        " default width
+set columns=110       " default width
 set lines=72          " default height
 set cursorline        " highlight the current line
 set linespace=1       " increase line spacing
@@ -29,7 +29,7 @@ elseif has ('unix')
   set guifont=Fira\ Code\ 12
   set mousemodel=popup  " allow right click menus
   set guioptions+=m     " show menu bar
-  colorscheme molokai
-  set background=dark
+  colorscheme macvim
+  set background=light
 endif
 
