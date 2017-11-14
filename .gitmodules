@@ -7,12 +7,6 @@
 [submodule ".vim/bundle/limelight.vim"]
 	path = .vim/bundle/limelight.vim
 	url = https://github.com/junegunn/limelight.vim.git
-[submodule ".local/share/fonts"]
-	path = .local/share/fonts
-	url = git@github.com:Lokaltog/powerline-fonts.git
-[submodule ".vim/bundle/neocomplcache"]
-	path = .vim/bundle/neocomplcache
-	url = git@github.com:Shougo/neocomplcache.vim.git
 [submodule ".vim/bundle/elm-vim"]
 	path = .vim/bundle/elm-vim
 	url = git@github.com:ElmCast/elm-vim.git
