@@ -77,7 +77,7 @@ set matchtime=5     " how many tenths of a second to show highlight
 set wildmenu        " tab based completino for commands
 set wildmode=longest,list,full      " fill screen with all possible completions
 set nowrap          " disable line wrapping for long lines
-set background=dark
+set background=light
 
 
 "
