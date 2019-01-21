@@ -1,7 +1,5 @@
-.zedstate
-
 # Compiled source #
-###################
+##################r
 *.com
 *.class
 *.dll
@@ -44,3 +42,8 @@ Thumbs.db
 #####################
 .gitconfig
 .ssh
+
+# emacs             #
+#####################
+*~
+\#*\#

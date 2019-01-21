@@ -7,6 +7,24 @@
 [submodule ".vim/bundle/limelight.vim"]
 	path = .vim/bundle/limelight.vim
 	url = https://github.com/junegunn/limelight.vim.git
-[submodule ".vim/bundle/elm-vim"]
-	path = .vim/bundle/elm-vim
-	url = git@github.com:ElmCast/elm-vim.git
+[submodule ".emacs.d/evil"]
+	path = .emacs.d/evil
+	url = git@github.com:emacs-evil/evil.git
+[submodule ".emacs.d/markdown-mode"]
+	path = .emacs.d/markdown-mode
+	url = git@github.com:jrblevin/markdown-mode.git
+[submodule ".emacs.d/yaml-mode"]
+	path = .emacs.d/yaml-mode
+	url = https://github.com/yoshiki/yaml-mode
+[submodule ".emacs.d/elpa/.emacs.d/evil-magit"]
+	path = .emacs.d/elpa/.emacs.d/evil-magit
+	url = git@github.com:emacs-evil/evil-magit.git
+[submodule ".emacs.d/evil-magit"]
+	path = .emacs.d/evil-magit
+	url = git@github.com:emacs-evil/evil-magit.git
+[submodule ".emacs.d/terraform-mode"]
+	path = .emacs.d/terraform-mode
+	url = git@github.com:emacsmirror/terraform-mode.git
+[submodule ".emacs.d/hcl-mode"]
+	path = .emacs.d/hcl-mode
+	url = git@github.com:syohex/emacs-hcl-mode.git
