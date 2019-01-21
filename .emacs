@@ -4,20 +4,32 @@
 ;; You may delete these explanatory comments.
 ;;(package-initialize)
 
-;; Settings
-;; =================================================================
 
 ;; General goodness
-;; ----------------
+;; =================================================================
+;; universal one liners etc
+
 ;; Tab Are Evil
 (setq-default indent-tabs-mode nil)
-;;
+
 ;; ido
 (ido-mode)
 (setq org-completion-use-ido t)
 
+;; custom themes folder
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+
+;; disable menu bar
+;; (menu-bar-mode -1)
+;; disable tool bar
+(tool-bar-mode -1)
+;; disable scroll bar
+(toggle-scroll-bar -1)
+
+
 ;; Org Mode
-;; ----------------
+;; =================================================================
+
 (set-register ?o (cons 'file "~/org-work/work.org"))
 ;; c-x r j o
 ;;     register
@@ -110,10 +122,14 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(custom-enabled-themes '(nord))
+ '(custom-safe-themes
+   '("fe666e5ac37c2dfcf80074e88b9252c71a22b6f5d2f566df9a7aa4f9bea55ef8" "4515feff287a98863b7b7f762197a78a7c2bfb6ec93879e7284dff184419268c" default))
  '(package-selected-packages '(magit)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Ubuntu Mono" :foundry "DAMA" :slant normal :weight normal :height 113 :width normal)))))
+ '(default ((t (:family "Ubuntu Mono" :foundry "DAMA" :slant normal :weight normal :height 113 :width normal))))
+ '(markdown-code-face ((t nil))))

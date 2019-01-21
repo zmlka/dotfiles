@@ -2,15 +2,13 @@
 
 Clone the repository into the home directory
 
-git config --global core.excludesfile ~/.gitignore_global
-```
-
 Update the git submodules (eg: git submodules are used for vim plugins)
 
 ```
 git submodule init
 git submodule update
 ```
+
 ### vim
 
 ```
@@ -25,9 +23,12 @@ git config --global user.name "Mona Lisa"
 ```
 
 ```
-git config user.name "Mona Lisa"
+git config --global user.email "mona@lisa.com"
 ```
 
+```
+git config --global core.excludesfile ~/.gitignore_global
+```
 
 ## Maintenance
 
@@ -36,7 +37,13 @@ add a new submodule:
 ```
 git submodule add git@github.com:SOME_USER/SOME_REPO.git OPTIONAL/DESTINATION
 ```
-for example `git submodule add git@github.com:Shougo/neocomplcache.vim.git .vim/bundle/neocomplcache`
+
+for example:
+
+```
+git submodule add git@github.com:Shougo/neocomplcache.vim.git .vim/bundle/neocomplcache
+
+```
 
 update all submodules:
 
