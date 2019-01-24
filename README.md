@@ -42,13 +42,12 @@ for example:
 
 ```
 git submodule add git@github.com:Shougo/neocomplcache.vim.git .vim/bundle/neocomplcache
-
 ```
 
 update all submodules:
 
 ```
-git submodule foreach git pull origin master
+Git submodule foreach git pull origin master
 ```
 
 remove and delete the content of a submodule:
