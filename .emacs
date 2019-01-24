@@ -26,11 +26,13 @@
 ;; disable scroll bar
 (toggle-scroll-bar -1)
 
+;; spellcheck
+
+(add-hook 'text-mode-hook 'flyspell-mode)
 
 ;; Org Mode
 ;; =================================================================
-
-(set-register ?o (cons 'file "~/org-work/work.org"))
+(set-register ?o (cons 'file "~/code/org-work/work.org"))
 ;; c-x r j o
 ;;     register
 ;;       jump
@@ -39,7 +41,7 @@
 ;; Org capture
 (global-set-key (kbd "C-c c") 'org-capture)
 (setq org-capture-templates
-   '(("m" "Meeting Minutes" entry (file+datetree"~/org-work/work-diary.org")
+   '(("m" "Meeting Minutes" entry (file+datetree"~/code/org-work/work-diary.org")
       "* %^{subject}    :MEETING:\n\nPeople:\n- %?\n\nMeeting Notes:\n- \n\n:LOGBOOK:\n- Added: %U\n:END:")
      ("n" "Notes" entry(file+datetree"~/org-work/work-diary.org")
       "* %^{subject}    :NOTES:\n\n%?\n\n:LOGBOOK:\n- Added: %U\n:END:")
@@ -122,14 +124,17 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ansi-color-names-vector
+   ["#212526" "#ff4b4b" "#b4fa70" "#fce94f" "#729fcf" "#e090d7" "#8cc4ff" "#eeeeec"])
  '(custom-enabled-themes '(nord))
  '(custom-safe-themes
-   '("fe666e5ac37c2dfcf80074e88b9252c71a22b6f5d2f566df9a7aa4f9bea55ef8" "4515feff287a98863b7b7f762197a78a7c2bfb6ec93879e7284dff184419268c" default))
- '(package-selected-packages '(magit)))
+   '("c92a0fece9ad256d83a0ce85df1f15e1c9280eba91c0cc06f8879b9572a855c7" "fe666e5ac37c2dfcf80074e88b9252c71a22b6f5d2f566df9a7aa4f9bea55ef8" "4515feff287a98863b7b7f762197a78a7c2bfb6ec93879e7284dff184419268c" default))
+ '(package-selected-packages '(magit))
+ '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Ubuntu Mono" :foundry "DAMA" :slant normal :weight normal :height 113 :width normal))))
+ '(default ((t (:family "Ubuntu Mono" :foundry "DAMA" :slant normal :weight normal :height 120 :width normal))))
  '(markdown-code-face ((t nil))))
