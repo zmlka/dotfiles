@@ -88,6 +88,19 @@
 (add-to-list 'load-path "~/.emacs.d/evil-magit")
 (require 'evil-magit)
 
+;; avy
+;; ----------------
+
+(add-to-list 'load-path "~/.emacs.d/avy")
+(require 'avy)
+
+;; ace window
+;; ----------------
+(add-to-list 'load-path "~/.emacs.d/ace-window")
+(require 'ace-window)
+(global-set-key (kbd "M-o") 'ace-window)
+
+
 ;; Markdown
 ;; ----------------
 (add-to-list 'load-path "~/.emacs.d/markdown-mode")

@@ -58,7 +58,7 @@ remove and delete the content of a submodule:
 git submodule deinit -f SUBMODULE_PATH
 ## remove the git cache
 rm -rf .git/modules/SUBMODULE_PATH 
-## remove thesubmodule files
+## remove the submodule files
 git rm -f SUBMODULE_PATH
 ```
 
