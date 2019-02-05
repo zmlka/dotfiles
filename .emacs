@@ -29,6 +29,7 @@
 ;; spellcheck
 
 (add-hook 'text-mode-hook 'flyspell-mode)
+(setq ispell-dictionary "british")
 
 ;; Org Mode
 ;; =================================================================
