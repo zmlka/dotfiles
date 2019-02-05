@@ -26,6 +26,12 @@
 ;; disable scroll bar
 (toggle-scroll-bar -1)
 
+
+;; save emacs state for next startup
+;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Saving-Emacs-Sessions.html
+(desktop-save-mode 1)
+
+
 ;; spellcheck
 
 (add-hook 'text-mode-hook 'flyspell-mode)
