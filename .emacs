@@ -57,6 +57,8 @@
 (global-set-key (kbd "C-c C-l") 'org-insert-link)
 ;; Start-up with soft-wrap enabled
 (setq org-startup-truncated nil)
+;; don't indent text below heading to match heading
+(setq org-adapt-indentation nil)
 
 
 ;; Plugins (melpa)

@@ -67,5 +67,5 @@ example:
 ```bash
 git submodule deinit -f .vim/bundle/elm-vim
 rm -rf .git/modules/.vim/bundle/elm-vim
-git rm -r .vim/bundle/elm-vim
+git rm -f .vim/bundle/elm-vim
 ```
