@@ -39,27 +39,25 @@
 
 ;; Org Mode
 ;; =================================================================
-(set-register ?o (cons 'file "~/code/org-work/work.org"))
+(set-register ?o (cons 'file "~/code/org-work/life.org"))
 ;; c-x r j o
 ;;     register
 ;;       jump
 ;;         org-work.org
 ;;
-;; Org capture
-(global-set-key (kbd "C-c c") 'org-capture)
 (setq org-capture-templates
-   '(("m" "Meeting Minutes" entry (file+datetree"~/code/org-work/work-diary.org")
-      "* %^{subject}    :MEETING:\n\nPeople:\n- %?\n\nMeeting Notes:\n- \n\n:LOGBOOK:\n- Added: %U\n:END:")
-     ("n" "Notes" entry(file+datetree"~/org-work/work-diary.org")
-      "* %^{subject}    :NOTES:\n\n%?\n\n:LOGBOOK:\n- Added: %U\n:END:")
+   '(("m" "Meeting Minutes" entry (file+datetree"~/code/org-work/work-notes.org")
+      "* %^{subject}    :MEETING:\n\nPeople:\n- %?\n\nMeeting Notes:\n- \n")
+     ("n" "Notes" entry(file+datetree"~/org-work/work-notes.org")
+      "* %^{subject}    :NOTES:\n\n- %?\n")
      ))
-(global-set-key (kbd "C-c l") 'org-store-link)
-(global-set-key (kbd "C-c C-l") 'org-insert-link)
+;; basic shortcuts
+(global-set-key (kbd "C-c c") 'org-capture)
+(global-set-key (kbd "C-c a") 'org-agenda)
 ;; Start-up with soft-wrap enabled
 (setq org-startup-truncated nil)
 ;; don't indent text below heading to match heading
 (setq org-adapt-indentation nil)
-
 
 ;; Plugins (melpa)
 ;; ----------------
@@ -151,6 +149,7 @@
  '(custom-enabled-themes '(nord))
  '(custom-safe-themes
    '("c92a0fece9ad256d83a0ce85df1f15e1c9280eba91c0cc06f8879b9572a855c7" "fe666e5ac37c2dfcf80074e88b9252c71a22b6f5d2f566df9a7aa4f9bea55ef8" "4515feff287a98863b7b7f762197a78a7c2bfb6ec93879e7284dff184419268c" default))
+ '(org-agenda-files '("~/code/org-work/tasks.org"))
  '(package-selected-packages '(magit))
  '(tool-bar-mode nil))
 (custom-set-faces
