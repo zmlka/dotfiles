@@ -2,7 +2,7 @@
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
-;;(package-initialize)
+(package-initialize)
 
 
 ;; General goodness
@@ -71,10 +71,21 @@
 (add-to-list 'package-archives
              '("melpa-stable" . "http://stable.melpa.org/packages/") t)
 
+;; melpa-stable
+;; =================================================================
+(require 'projectile)
+(define-key projectile-mode-map (kbd "M-p") 'projectile-command-map)
+(projectile-mode +1)
+
+
 ;; Magit
 ;; ----------------
 ;; magit-key
 (global-set-key (kbd "C-x g") 'magit-status)
+
+;; Company mode
+;; ----------------
+;; to enable company mode in buffer, M-x company-mode
 
 
 ;; Plugins (git submodules)
@@ -133,6 +144,8 @@
 (add-to-list 'load-path "~/.emacs.d/hcl-mode")
 (require 'hcl-mode)
 (require 'terraform-mode)
+(require 'company-terraform)
+(company-terraform-init)
 
 
 ;; Don't touch!
@@ -150,7 +163,7 @@
  '(custom-safe-themes
    '("c92a0fece9ad256d83a0ce85df1f15e1c9280eba91c0cc06f8879b9572a855c7" "fe666e5ac37c2dfcf80074e88b9252c71a22b6f5d2f566df9a7aa4f9bea55ef8" "4515feff287a98863b7b7f762197a78a7c2bfb6ec93879e7284dff184419268c" default))
  '(org-agenda-files '("~/code/org-work/tasks.org"))
- '(package-selected-packages '(magit))
+ '(package-selected-packages '(company-terraform company projectile magit))
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
