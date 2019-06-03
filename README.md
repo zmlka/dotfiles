@@ -5,29 +5,40 @@ Clone the repository into the home directory
 Update the git submodules (eg: git submodules are used for emacs
 plugins)
 
-```bash
+```shell
 git submodule init
 git submodule update
 ```
 
 ### vim
 
-```bash
+```shell
 mkdir ~/.backups
 ```
+
+### emacs
+
+Upon first startup emacs might complain about missing files related to
+plugins. These will have to be installed manually as my emacs config
+currently does not check for missing packages declaratively.
+
+Update package list with `M-x` `list-packages`  
+Install missing packages with `M-x` `package-install`
+
+
 
 ## git config
 
 
-```bash
+```shell
 git config --global user.name "Mona Lisa"
 ```
 
-```bash
+```shell
 git config --global user.email "mona@lisa.com"
 ```
 
-```bash
+```shell
 git config --global core.excludesfile ~/.gitignore_global
 ```
 
@@ -35,25 +46,25 @@ git config --global core.excludesfile ~/.gitignore_global
 
 add a new submodule:
 
-```bash
+```shell
 git submodule add https://github.com/SOME_USER/SOME_REPO.git OPTIONAL/DESTINATION
 ```
 
 for example:
 
-```bash
+```shell
 git submodule add https://github.com/Shougo/neocomplcache.vim.git .vim/bundle/neocomplcache
 ```
 
 update all submodules:
 
-```bash
+```shell
 git submodule foreach git pull origin master
 ```
 
 remove and delete the content of a submodule:
 
-```bash
+```shell
 ## deinitialise the submodule
 git submodule deinit -f SUBMODULE_PATH
 ## remove the git cache
@@ -64,7 +75,7 @@ git rm -f SUBMODULE_PATH
 
 example:
 
-```bash
+```shell
 git submodule deinit -f .vim/bundle/elm-vim
 rm -rf .git/modules/.vim/bundle/elm-vim
 git rm -f .vim/bundle/elm-vim
