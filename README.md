@@ -36,13 +36,13 @@ git config --global core.excludesfile ~/.gitignore_global
 add a new submodule:
 
 ```bash
-git submodule add git@github.com:SOME_USER/SOME_REPO.git OPTIONAL/DESTINATION
+git submodule add https://github.com/SOME_USER/SOME_REPO.git OPTIONAL/DESTINATION
 ```
 
 for example:
 
 ```bash
-git submodule add git@github.com:Shougo/neocomplcache.vim.git .vim/bundle/neocomplcache
+git submodule add https://github.com/Shougo/neocomplcache.vim.git .vim/bundle/neocomplcache
 ```
 
 update all submodules:
