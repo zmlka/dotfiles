@@ -3,5 +3,6 @@
 /.emacs.d/bookmarks
 /.emacs.d/eshell/
 /.emacs.d/server
+/.emacs.d/elpa
 /.emacs.d/.emacs.desktop.lock
 /.emacs.d/.emacs.desktop
