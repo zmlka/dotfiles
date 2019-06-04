@@ -25,7 +25,10 @@ currently does not check for missing packages declaratively.
 Update package list with `M-x` `list-packages`  
 Install missing packages with `M-x` `package-install`
 
+### colours
 
+Where appropriate, manually apply [Nord theme][1]. Eg: Slack, Gnome
+Terminal.
 
 ## git config
 
@@ -80,3 +83,6 @@ git submodule deinit -f .vim/bundle/elm-vim
 rm -rf .git/modules/.vim/bundle/elm-vim
 git rm -f .vim/bundle/elm-vim
 ```
+
+
+[1]:https://www.nordtheme.com/ports
