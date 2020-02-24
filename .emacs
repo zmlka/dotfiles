@@ -48,7 +48,7 @@
 (setq org-capture-templates
    '(("m" "Meeting Minutes" entry (file+datetree"~/code/org-work/work-notes.org")
       "* %^{subject}    :MEETING:\n\nPeople:\n- %?\n\nMeeting Notes:\n- \n")
-     ("n" "Notes" entry(file+datetree"~/org-work/work-notes.org")
+     ("n" "Notes" entry(file+datetree"~/code/org-work/work-notes.org")
       "* %^{subject}    :NOTES:\n\n- %?\n")
      ))
 ;; basic shortcuts
@@ -111,6 +111,7 @@
 
 (add-to-list 'load-path "~/.emacs.d/avy")
 (require 'avy)
+(global-set-key (kbd "C-;") 'avy-goto-char-2)
 
 ;; ace window
 ;; ----------------
